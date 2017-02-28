@@ -1,0 +1,20 @@
+{php $indexc = 5;}
+{template ./temp/head.html}
+<div class="yxwl-info">
+    <h2>{$title}</h2>
+    <div class="yxwl-info-msg">
+        <div class="yxwl-info-msg-area">
+            <div class="yxwl-info-msg-item">
+                <h3>地址：</h3>
+                <p>{$dizhi}</p>
+            </div>
+            <a class="yxwl-jtlkt">交通路线图<span></span></a>
+            <div class="yxwl-info-msg-item">
+                <h3>营业时间：</h3>
+                <p>{$yingyeshijian}</p>
+            </div>
+        </div>
+        <img src="{$thumb}" alt="">
+    </div>
+</div>
+{template ./temp/footer.html}

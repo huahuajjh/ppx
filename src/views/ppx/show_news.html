@@ -1,0 +1,44 @@
+{php $indexc = 0;}
+{template ./temp/head.html}
+<style type="text/css">
+    body {
+        background-color: #FCFCFC;
+    }
+</style>
+<div class="new-body-context">
+    <h1>{$title}</h1>
+    <div class="new-body-context-val">
+        <div class="new-body-context-time">
+            <span class="new">NEWS</span>
+            <hr>
+            <span class="time">{date("Y.m.d", $updatetime)}</span>
+        </div>
+        <a class="new-fenxiang jiathis jiathis_txt jtico jtico_jiathis">分享 | SHARE
+        </a>
+        <div class="close-btn"></div>
+        <a href="{$next_page['url']}" class="next-new-btn"></a>
+        <a href="{$prev_page['url']}" class="per-new-btn"></a>
+        <div class="context">{$content}</div>
+        <div class="bottom-news">
+            <h2>相关阅读 <span>/</span> NEWS</h2>
+            <ul>
+                {list action=relation id=$id return=xg}
+                <li>
+                    <a href="{$xg['url']}">
+                        <h3>{$xg['title']}</h3>
+                        <img src="{$xg['thumb']}" alt="">
+                        <span>{$xg['description']}</span>
+                        <p>
+                            <span class="time">{date("Y-m-d H:i:s", $xg['updatetime'])}</span>
+                            <span class="go"></span>
+                        </p>
+                    </a>
+                </li>
+                {/list}
+            </ul>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+{template ./temp/footer.html}

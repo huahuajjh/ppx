@@ -1,0 +1,95 @@
+{php $indexc = 5;}
+{template ./temp/head.html}
+{php $dataType=json_encode(linkagelist(2, 3));}
+{php $dq = $_GET['dq'];}
+{if $dq != null}
+{list table=linkage id=$dq}
+{php $linkageName=$t[name];}
+{/list}
+{/if}
+<style type="text/css">
+@media (min-width: 992px) {
+  .banner-image img{
+    height: 560px;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-image img{
+      height: 600px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .yxwl-banner {
+        width: 100%;
+    }
+}
+@media (max-width: 520px) {
+    .yxwl-down-list {
+        width: 300px;
+        margin-left: -150px;
+    }
+}
+</style>
+<div class="yxwl-banner" style="z-index: 10;">
+    <img src="{$cats[27][image]}" alt="">
+</div>
+<div class="mendian-list">
+    <h2>品品香全国连锁店{if $linkageName != null}，{$linkageName}{/if}</h2>
+    <div class="yxwl-down-list">
+        <p>{if $linkageName != null}{$linkageName}{else}选择省份或地区{/if}</p>
+        <span></span>
+        <ul>
+            {php $data=linkagelist(2);}
+            {loop $data $t}
+                <li>
+                    <a href="/index.php?c=content&a=list&catid=27&dq={$t['id']}">{$t['name']}</a>
+                </li>
+                {if $t['arrchilds'] != null}
+                    {php $data1=linkagelist(2, $t['id']);}
+                    {loop $data1 $t2}
+                        <li>
+                            <a href="/index.php?c=content&a=list&catid=27&dq={$t2['id']}">&nbsp;&nbsp;&nbsp;&nbsp;|---{$t2['name']}</a>
+                        </li>
+                        {if $t2['arrchilds'] != null}
+                            {php $data2=linkagelist(2, $t2['id']);}
+                            {loop $data2 $t3}
+                                <li>
+                                    <a href="/index.php?c=content&a=list&catid=27&dq={$t3['id']}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---{$t3['name']}</a>
+                                </li>
+                            {/loop}
+                        {/if}
+                    {/loop}
+                {/if}
+            {/loop}
+        </ul>
+    </div>
+</div>
+<hr style="border-color: #F9F9F9; margin: 0;">
+<ul class="mendian-list-data">
+    {if $dq != null}
+    {list catid=27 and suozaidiqu=$dq more=1 cache=36000 order=listorder_asc}
+    <li>
+        <a href="{$t['url']}">
+            <h2>{$t[title]}</h2>
+            <span>{$t['dizhi']}</span>
+        </a>
+    </li>
+    {/list}
+    {else}
+    {list catid=27 more=1 cache=36000 order=listorder_asc}
+    <li>
+        <a href="{$t['url']}">
+            <h2>{$t[title]}</h2>
+            <span>{$t['dizhi']}</span>
+        </a>
+    </li>
+    {/list}
+    {/if}
+</ul>
+<script type="text/javascript">
+    $(".yxwl-down-list").click(function() {
+        $(this).find("ul").toggle();
+    });
+</script>
+{template ./temp/footer.html}

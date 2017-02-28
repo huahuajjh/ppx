@@ -1,0 +1,42 @@
+{php $indexc = 2;}
+{template ./temp/head.html}
+    <div class="pinpai-top-bg">
+        <img class="bgpinpai-top-menu-bg" src="{$cats[13][image]}" alt="">
+    </div>
+    <div class="pinpai-hr" style="border-top: 2px solid #484540;"></div>
+    <div style="background-color: #000000">
+        <ul class="chanpin-list">
+            {php $data=getCatNav(13);}
+            {loop $data $t}
+            <li {if $catid == $t['catid']}class="active"{/if}>
+                <a href="{$t['url']}">
+                    <img src="{$t['image']}" alt="">
+                    <h2>{$t['meta_title']}</h2>
+                    <span>{$t['meta_description']}</span>
+                </a>
+            </li>
+            {/loop}
+        </ul>
+        <div class="pinpai-hr" style="border-top: 2px solid #484540;clear: both;"></div>
+    </div>
+    <div style="background-color: #000000; padding: 80px 0;">
+        <ul class="chanpin-list-data">
+            {list catid=$catid more=1 cache=36000}
+            <li>
+                <img src="{$t['thumb']}" alt="">
+                <div>
+                    <h3>{$t['title']}</h3>
+                    <span>年份：{$t['nianfen']}</span>
+                    <span>等级：{$t['dengji']}</span>
+                    <span>产地：{$t['chandi']}</span>
+                    <span>价格：{$t['jiage']}</span>
+                    <hr>
+                    <a href="{$t['tianmaodizhi']}" class="tianmao"></a>
+                    <a href="{$t['jingdongdizhi']}" class="jingdong"></a>
+                </div>
+            </li>
+            {/list}
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+{template ./temp/footer.html}

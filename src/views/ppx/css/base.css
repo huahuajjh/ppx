@@ -1,0 +1,47 @@
+/*@media (max-width: 992px) {
+    .img_div > img{
+        height: 284px;
+    }
+}
+
+@media (max-width: 300px) {
+    .img_div > img{
+        height: 190px;
+    }
+}*/
+
+
+.img_div img{
+    width: 100%;
+    display: block;
+}
+
+.jjh-hr-4{
+    height: 0px;
+    width: 100%;
+    border-top: 4px solid #A2824F;
+}
+
+.threeD_map_container {
+    height: 600px;
+}
+.threeD_map_container embed{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .img_div{
+        margin: 0 -100px;
+    }
+    .threeD_map_container{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .threeD_map_container{
+        height: 300px;
+    }
+}

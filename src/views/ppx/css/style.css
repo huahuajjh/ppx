@@ -262,33 +262,7 @@ p, ul, ol {
 
 .banner-image img{
     width: 100%;
-    height: 700px;
     display: block;
-}
-@media screen and (max-width: 768px) {
-    .banner-image img{
-        height: 330px;
-    }
-}
-@media screen and (max-width: 480px) {
-    .banner-image img{
-        height: 230px;
-    }
-}
-@media (min-width: 768px) {
-  .banner-image img{
-    height: 360px;
-  }
-}
-@media (min-width: 992px) {
-  .banner-image img{
-    height: 560px;
-  }
-}
-@media (min-width: 1200px) {
-  .banner-image img{
-      height: 700px;
-  }
 }
 
 .banner-image .arrow-right {

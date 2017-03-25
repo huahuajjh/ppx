@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-02-28 17:46:11
+Date: 2017-03-25 19:12:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -26,7 +26,7 @@ CREATE TABLE `ppx_block` (
   `name` varchar(50) NOT NULL,
   `content` mediumtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_block
@@ -68,6 +68,42 @@ INSERT INTO `ppx_block` VALUES ('34', '1', '2', '三大标准 图片 3', 'upload
 INSERT INTO `ppx_block` VALUES ('35', '1', '2', '三大标准 图片 4', 'uploadfiles/image/201702/78.jpg');
 INSERT INTO `ppx_block` VALUES ('36', '1', '2', '白茶庄园 360度', 'uploadfiles/image/201702/85.jpg');
 INSERT INTO `ppx_block` VALUES ('37', '1', '2', '茶园基地 360度', 'uploadfiles/image/201702/86.jpg');
+INSERT INTO `ppx_block` VALUES ('38', '1', '2', '中国白茶品品香-品牌溯源-未选中', 'uploadfiles/image/201703/68.png');
+INSERT INTO `ppx_block` VALUES ('39', '1', '2', '中国白茶品品香-品牌溯源-选中', 'uploadfiles/image/201703/69.png');
+INSERT INTO `ppx_block` VALUES ('40', '1', '2', '中国白茶品品香-品牌释义-未选中', 'uploadfiles/image/201703/70.png');
+INSERT INTO `ppx_block` VALUES ('41', '1', '2', '中国白茶品品香-品牌释义-选中', 'uploadfiles/image/201703/71.png');
+INSERT INTO `ppx_block` VALUES ('42', '1', '2', '中国白茶品品香-品牌定位-未选中', 'uploadfiles/image/201703/72.png');
+INSERT INTO `ppx_block` VALUES ('43', '1', '2', '中国白茶品品香-品牌定位-选中', 'uploadfiles/image/201703/73.png');
+INSERT INTO `ppx_block` VALUES ('44', '1', '2', '中国白茶顶部背景', 'uploadfiles/image/201703/45.jpg');
+INSERT INTO `ppx_block` VALUES ('45', '1', '2', '中国白茶品品香-品牌溯源-1', 'uploadfiles/image/201703/46.jpg');
+INSERT INTO `ppx_block` VALUES ('46', '1', '2', '中国白茶品品香-品牌溯源-2', 'uploadfiles/image/201703/47.jpg');
+INSERT INTO `ppx_block` VALUES ('47', '1', '2', '中国白茶品品香-品牌溯源-3', 'uploadfiles/image/201703/48.jpg');
+INSERT INTO `ppx_block` VALUES ('48', '1', '2', '中国白茶品品香-品牌溯源-4', 'uploadfiles/image/201703/49.jpg');
+INSERT INTO `ppx_block` VALUES ('49', '1', '2', '中国白茶品品香-品牌溯源-5', 'uploadfiles/image/201703/50.jpg');
+INSERT INTO `ppx_block` VALUES ('50', '1', '2', '中国白茶品品香-品牌溯源-6', 'uploadfiles/image/201703/51.jpg');
+INSERT INTO `ppx_block` VALUES ('51', '1', '2', '中国白茶品品香-品牌释义-1', 'uploadfiles/image/201703/52.jpg');
+INSERT INTO `ppx_block` VALUES ('52', '1', '2', '中国白茶品品香-品牌释义-2', 'uploadfiles/image/201703/53.jpg');
+INSERT INTO `ppx_block` VALUES ('53', '1', '2', '中国白茶品品香-品牌释义-3', 'uploadfiles/image/201703/54.jpg');
+INSERT INTO `ppx_block` VALUES ('54', '1', '2', '中国白茶品品香-品牌定位-1', 'uploadfiles/image/201703/55.jpg');
+INSERT INTO `ppx_block` VALUES ('55', '1', '2', '中国白茶品品香-品牌定位-2', 'uploadfiles/image/201703/56.jpg');
+INSERT INTO `ppx_block` VALUES ('56', '1', '2', '中国白茶品品香-品牌定位-3', 'uploadfiles/image/201703/57.jpg');
+INSERT INTO `ppx_block` VALUES ('57', '1', '2', '中国白茶品品香-品牌定位-4', 'uploadfiles/image/201703/58.jpg');
+INSERT INTO `ppx_block` VALUES ('58', '1', '2', '中国白茶品品香-品牌定位-5', 'uploadfiles/image/201703/59.jpg');
+INSERT INTO `ppx_block` VALUES ('59', '1', '2', '中国白茶品品香-品牌定位-6', 'uploadfiles/image/201703/60.jpg');
+INSERT INTO `ppx_block` VALUES ('60', '1', '2', '白茶游学-1', 'uploadfiles/image/201703/61.jpg');
+INSERT INTO `ppx_block` VALUES ('61', '1', '2', '白茶游学-2', 'uploadfiles/image/201703/62.jpg');
+INSERT INTO `ppx_block` VALUES ('62', '1', '2', '白茶游学-3', 'uploadfiles/image/201703/63.jpg');
+INSERT INTO `ppx_block` VALUES ('63', '1', '2', '人才招聘-1', 'uploadfiles/image/201703/66.jpg');
+INSERT INTO `ppx_block` VALUES ('64', '1', '2', '人才招聘-2', 'uploadfiles/image/201703/78.jpg');
+INSERT INTO `ppx_block` VALUES ('65', '1', '2', '传承工艺-1', 'uploadfiles/image/201703/74.jpg');
+INSERT INTO `ppx_block` VALUES ('66', '1', '2', '传承工艺-2', 'uploadfiles/image/201703/75.jpg');
+INSERT INTO `ppx_block` VALUES ('67', '1', '2', '传承工艺-3', 'uploadfiles/image/201703/76.jpg');
+INSERT INTO `ppx_block` VALUES ('68', '1', '2', '传承工艺-4', 'uploadfiles/image/201703/77.jpg');
+INSERT INTO `ppx_block` VALUES ('69', '1', '2', '大师团队-1', 'uploadfiles/image/201703/79.jpg');
+INSERT INTO `ppx_block` VALUES ('70', '1', '2', '大师团队-2', 'uploadfiles/image/201703/80.jpg');
+INSERT INTO `ppx_block` VALUES ('71', '1', '2', '大师团队-3', 'uploadfiles/image/201703/81.jpg');
+INSERT INTO `ppx_block` VALUES ('72', '1', '1', '招商加盟', '#招商加盟');
+INSERT INTO `ppx_block` VALUES ('73', '1', '1', '天猫旗舰店', '#天猫旗舰店');
 
 -- ----------------------------
 -- Table structure for `ppx_category`
@@ -105,39 +141,55 @@ CREATE TABLE `ppx_category` (
   KEY `parentid` (`parentid`),
   KEY `site` (`site`),
   KEY `modelid` (`modelid`)
-) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_category
 -- ----------------------------
-INSERT INTO `ppx_category` VALUES ('2', '1', '1', '9', '0', '2,4,7,6,12,13,18,25,31,11', '0', '', '前台幻灯片', '', '', '', '', '', 'qiantaihuandengpian', '/index.php?c=content&a=list&catid=2', '', '3', '0', '0', 'index.html', 'index.html', 'index.html', 'a:8:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"1\";s:9:\"modelpost\";a:1:{i:0;s:1:\"6\";}s:9:\"grouppost\";a:5:{i:0;s:1:\"5\";i:1;s:1:\"4\";i:2;s:1:\"3\";i:3;s:1:\"2\";i:4;s:1:\"1\";}s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('3', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '公司简介', '', '&lt;p&gt;不需要填写内容&lt;/p&gt;', '', '', '', 'gongsijianjie', '/index.php?c=content&a=list&catid=3', '', '0', '0', '1', '', '', 'guanYu.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('4', '1', '1', '10', '0', '2,4,7,6,12,13,18,25,31,11', '0', '', '发展历程', '', '', '', '', '', 'fazhanlicheng', '/index.php?c=content&a=list&catid=4', '', '7', '0', '0', 'liCheng.html', 'liCheng.html', 'liCheng.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('7', '1', '1', '11', '0', '2,4,7,6,12,13,18,25,31,11', '0', '', '企业荣誉', '', '', '', '', '', 'qiyerongyu', '/index.php?c=content&a=list&catid=7', '', '1', '0', '1', 'rongyu.html', 'rongyu.html', 'rongyu.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('6', '1', '1', '11', '0', '2,4,7,6,12,13,18,25,31,11', '0', '', '产品荣誉', '', '', '', '', '', 'chanpinrongyu', '/index.php?c=content&a=list&catid=6', '', '2', '0', '1', 'rongyu.html', 'rongyu.html', 'rongyu.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('8', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '品牌释义', '', '&lt;p&gt;不需要填写&lt;/p&gt;', '', '', '', 'pinpaishiyi', '/index.php?c=content&a=list&catid=8', '', '0', '0', '0', '', '', 'shaiBaiJin/pinpai.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('9', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '三大标准', '', '&lt;p&gt;不需要填写&lt;/p&gt;', '', '', '', 'sandabiaozhun', '/index.php?c=content&a=list&catid=9', '', '0', '0', '1', '', '', 'shaiBaiJin/pinpai2.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('10', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '三重体验', '', '&lt;p&gt;不需填写&lt;/p&gt;', '', '', '', 'sanzhongtiyan', '/index.php?c=content&a=list&catid=10', '', '0', '0', '1', '', '', 'shaiBaiJin/pinpai3.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('12', '1', '1', '1', '0', '2,4,7,6,12,13,18,25,31,11', '0', '', '新闻资讯', 'uploadfiles/image/201702/23.jpg', '', '', '', '', 'xinwenzixun', '/index.php?c=content&a=list&catid=12', '', '4', '0', '1', 'list_news.html', 'list_news.html', 'show_news.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('11', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,11', '1', '3,8,9,10,30,28,29', '其他栏目（无需改动）', '', '&lt;p&gt;不需填写&lt;/p&gt;', '', '', '', 'qitalanmuwuxugaidong', '/index.php?c=content&a=list&catid=11', '', '0', '99', '1', '', '', 'page.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('13', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,11', '1', '14,15,16,17', '晒白金产品', 'uploadfiles/image/201702/22.jpg', '&lt;p&gt;晒白金&lt;/p&gt;', '', '', '', 'shaibaijinchanpin', '/index.php?c=content&a=list&catid=13', '', '1', '0', '1', '', '', 'page.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('2', '1', '1', '9', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '前台幻灯片', '', '', '', '', '', 'qiantaihuandengpian', '/index.php?c=content&a=list&catid=2', '', '3', '0', '0', 'index.html', 'index.html', 'index.html', 'a:8:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"1\";s:9:\"modelpost\";a:1:{i:0;s:1:\"6\";}s:9:\"grouppost\";a:5:{i:0;s:1:\"5\";i:1;s:1:\"4\";i:2;s:1:\"3\";i:3;s:1:\"2\";i:4;s:1:\"1\";}s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('3', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '公司简介', '', '&lt;p&gt;不需要填写内容&lt;/p&gt;', '', '', '', 'gongsijianjie', '/index.php?c=content&a=list&catid=3', '', '0', '0', '1', '', '', 'guanYu.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('4', '1', '1', '10', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '发展历程', '', '', '', '', '', 'fazhanlicheng', '/index.php?c=content&a=list&catid=4', '', '7', '0', '0', 'liCheng.html', 'liCheng.html', 'liCheng.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('7', '1', '1', '11', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '企业荣誉', '', '', '', '', '', 'qiyerongyu', '/index.php?c=content&a=list&catid=7', '', '2', '0', '1', 'rongyu.html', 'rongyu.html', 'rongyu.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('6', '1', '1', '11', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '产品荣誉', '', '', '', '', '', 'chanpinrongyu', '/index.php?c=content&a=list&catid=6', '', '1', '0', '1', 'rongyu.html', 'rongyu.html', 'rongyu.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('8', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '品牌释义', '', '&lt;p&gt;不需要填写&lt;/p&gt;', '', '', '', 'pinpaishiyi', '/index.php?c=content&a=list&catid=8', '', '0', '0', '0', '', '', 'shaiBaiJin/pinpai.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('9', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '三大标准', '', '&lt;p&gt;不需要填写&lt;/p&gt;', '', '', '', 'sandabiaozhun', '/index.php?c=content&a=list&catid=9', '', '0', '0', '1', '', '', 'shaiBaiJin/pinpai2.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('10', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '三重体验', '', '&lt;p&gt;不需填写&lt;/p&gt;', '', '', '', 'sanzhongtiyan', '/index.php?c=content&a=list&catid=10', '', '0', '0', '1', '', '', 'shaiBaiJin/pinpai3.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('12', '1', '1', '1', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '新闻资讯', 'uploadfiles/image/201702/23.jpg', '', '', '', '#', 'xinwenzixun', '/index.php?c=content&a=list&catid=12', '', '0', '0', '1', 'list_news.html', 'list_news.html', 'show_news.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('11', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '3,8,9,10,30,28,29,33,37,49,48', '其他栏目（无需改动）', '', '&lt;p&gt;不需填写&lt;/p&gt;', '', '', '', 'qitalanmuwuxugaidong', '/index.php?c=content&a=list&catid=11', '', '0', '99', '1', '', '', 'page.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('13', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '14,15,16,17', '晒白金产品', 'uploadfiles/image/201702/22.jpg', '&lt;p&gt;晒白金&lt;/p&gt;', '', '', '', 'shaibaijinchanpin', '/index.php?c=content&a=list&catid=13', '', '1', '0', '1', '', '', 'page.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('14', '1', '1', '12', '13', '14,15,16,17', '0', '', '礼遇版', 'uploadfiles/image/201702/46.jpg', '', '礼遇版', '', '高贵典雅·礼遇尊享', 'shaibaijinliyuban', '/index.php?c=content&a=list&catid=14', '', '1', '0', '1', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('15', '1', '1', '12', '13', '14,15,16,17', '0', '', '精装版', 'uploadfiles/image/201702/47.jpg', '', '精装版', '', '精致茶礼·匠心之作', 'jingzhuangban', '/index.php?c=content&a=list&catid=15', '', '0', '0', '1', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('16', '1', '1', '12', '13', '14,15,16,17', '0', '', '珍藏版', 'uploadfiles/image/201702/48.jpg', '', '珍藏版', '', '极致好茶·珍藏典范', 'zhencangban', '/index.php?c=content&a=list&catid=16', '', '0', '0', '1', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('17', '1', '1', '12', '13', '14,15,16,17', '0', '', '简装版', 'uploadfiles/image/201702/49.jpg', '', '简装版', '', '简装生活·随心分享', 'jianzhuangban', '/index.php?c=content&a=list&catid=17', '', '0', '0', '1', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'shaibaijinchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('18', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,11', '1', '19,20,21,22,23', '品品香产品', 'uploadfiles/image/201702/28.jpg', '&lt;p&gt;品品香产品&lt;/p&gt;', '', '', '', 'pinpinxiangchanpin', '/index.php?c=content&a=list&catid=18', '', '1', '0', '1', 'index.html', 'list.htmlindex', 'index.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('18', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '19,20,21,22,23', '品品香产品', 'uploadfiles/image/201702/28.jpg', '&lt;p&gt;品品香产品&lt;/p&gt;', '', '', '', 'pinpinxiangchanpin', '/index.php?c=content&a=list&catid=18', '', '1', '0', '1', 'index.html', 'list.htmlindex', 'index.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('19', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '礼遇版', 'uploadfiles/image/201702/29.jpg', '', '礼遇版', '', '高贵典雅·礼遇尊享', 'ppxcpliyuban', '/index.php?c=content&a=list&catid=19', '', '1', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('20', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '精装版', 'uploadfiles/image/201702/30.jpg', '', '精装版', '', '精致茶礼·匠心之作', 'ppxjingzhuangban', '/index.php?c=content&a=list&catid=20', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('26', '1', '1', '9', '25', '26,27', '0', '', '营销网络轮播图', '', '', '', '', '', 'yingxiaowangluolunbotu', '/index.php?c=content&a=list&catid=26', '', '1', '0', '1', 'yingxiaowangluo.html', 'yingxiaowangluo.html', 'yingxiaowangluo.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
 INSERT INTO `ppx_category` VALUES ('21', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '珍藏版', 'uploadfiles/image/201702/31.jpg', '', '珍藏版', '', '极致好茶·珍藏典范', 'ppxzhencangban', '/index.php?c=content&a=list&catid=21', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('22', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '简装版', 'uploadfiles/image/201702/32.jpg', '', '简装版', '', '简装生活·随心所欲', 'ppxjianzhuangban', '/index.php?c=content&a=list&catid=22', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('23', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '有机茶', 'uploadfiles/image/201702/33.jpg', '', '有机茶', '', '有机标准·绿色生活', 'ppxyoujicha', '/index.php?c=content&a=list&catid=23', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('25', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,11', '1', '26,27', '营销网络', 'uploadfiles/image/201702/35.jpg', '&lt;p&gt;营销网络&lt;/p&gt;', '', '', '', 'yingxiaowangluo', '/index.php?c=content&a=list&catid=25', '', '3', '0', '1', '', '', 'yingxiaowangluo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('27', '1', '1', '13', '25', '26,27', '0', '', '门店信息', 'uploadfiles/image/201702/38.jpg', '', '', '', '', 'mendianxinxi', '/index.php?c=content&a=list&catid=27', '', '2', '0', '1', 'yingxiaowangluolist.html', 'yingxiaowangluolist.html', 'yingxiaowangluoInfo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('30', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '空页面展示', '', '&lt;p&gt;空页面展示&lt;/p&gt;', '', '', '', 'kongyemianzhanshi', '/index.php?c=content&a=list&catid=30', '', '0', '0', '1', '', '', 'downServer.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
-INSERT INTO `ppx_category` VALUES ('28', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '白茶庄园', '', '&lt;p&gt;白茶庄园&lt;/p&gt;', '', '', '', 'baichazhuangyuan', '/index.php?c=content&a=list&catid=28', '', '0', '0', '1', '', '', 'teabase.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('29', '1', '2', '0', '11', '3,8,9,10,30,28,29', '0', '', '茶园基地', '', '&lt;p&gt;茶园基地&lt;/p&gt;', '', '', '', 'chayuanjidi', '/index.php?c=content&a=list&catid=29', '', '0', '0', '1', '', '', 'whitetea.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
-INSERT INTO `ppx_category` VALUES ('31', '1', '1', '9', '0', '2,4,7,6,12,13,18,25,31,11', '0', '', '三大标准轮播图', '', '', '', '', '', 'sandabiaozhunlunbotu', '/index.php?c=content&a=list&catid=31', '', '3', '0', '1', 'index.html', 'index.html', 'index.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('25', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '26,27', '营销网络', 'uploadfiles/image/201702/35.jpg', '&lt;p&gt;营销网络&lt;/p&gt;', '', '', '', 'yingxiaowangluo', '/index.php?c=content&a=list&catid=25', '', '2', '0', '1', '', '', 'yingxiaowangluo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('27', '1', '1', '13', '25', '26,27', '0', '', '门店信息', 'uploadfiles/image/201702/38.jpg', '', '', '', '', 'mendianxinxi', '/index.php?c=content&a=list&catid=27', '', '1', '0', '1', 'yingxiaowangluolist.html', 'yingxiaowangluolist.html', 'yingxiaowangluoInfo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('30', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '空页面展示', '', '&lt;p&gt;空页面展示&lt;/p&gt;', '', '', '', 'kongyemianzhanshi', '/index.php?c=content&a=list&catid=30', '', '0', '0', '1', '', '', 'downServer.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('28', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '白茶庄园', '', '&lt;p&gt;白茶庄园&lt;/p&gt;', '', '', '', 'baichazhuangyuan', '/index.php?c=content&a=list&catid=28', '', '0', '0', '1', '', '', 'teabase.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('29', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '茶园基地', '', '&lt;p&gt;茶园基地&lt;/p&gt;', '', '', '', 'chayuanjidi', '/index.php?c=content&a=list&catid=29', '', '0', '0', '1', '', '', 'whitetea.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('31', '1', '1', '9', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '三大标准轮播图', '', '', '', '', '', 'sandabiaozhunlunbotu', '/index.php?c=content&a=list&catid=31', '', '3', '0', '1', 'index.html', 'index.html', 'index.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('33', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '1', '34,35,36', '中国白茶品品香', '', '&lt;p&gt;无需改动&lt;/p&gt;', '', '', '', 'zhongguobaichapinpinxiang', '/index.php?c=content&a=list&catid=33', '', '0', '0', '1', '', '', 'page.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('34', '1', '2', '0', '33', '34,35,36', '0', '', '品牌溯源', '', '&lt;p&gt;无需改动&lt;/p&gt;', '', '', '', 'pinpaisuyuan', '/index.php?c=content&a=list&catid=34', '', '0', '0', '1', '', '', 'zhongguobaichakpinpinxiang/pinpaisuyuan.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('35', '1', '2', '0', '33', '34,35,36', '0', '', '品牌释义', '', '&lt;p&gt;无需改动&lt;/p&gt;', '', '', '', 'baichapinpaishiyi', '/index.php?c=content&a=list&catid=35', '', '0', '0', '1', '', '', 'zhongguobaichakpinpinxiang/pinpaishiyi.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('36', '1', '2', '0', '33', '34,35,36', '0', '', '品牌定位', '', '&lt;p&gt;无需改动&lt;/p&gt;', '', '', '', 'baichapinpaidingwei', '/index.php?c=content&a=list&catid=36', '', '0', '0', '1', '', '', 'zhongguobaichakpinpinxiang/pinpaidingwei.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('37', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '白茶游学', '', '&lt;p&gt;无需更改&lt;/p&gt;', '', '', '', 'baichayouxue', '/index.php?c=content&a=list&catid=37', '', '0', '0', '1', '', '', 'youxue.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('38', '1', '1', '14', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '游学往期回顾', '', '', '', '', '', 'youxuewangqihuigu', '/index.php?c=content&a=list&catid=38', '', '1', '0', '1', 'youxue.html', 'youxue.html', 'youxue.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('39', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '41,42,43,44,45,46', '人才招聘', '', '&lt;p&gt;无需更改&lt;/p&gt;', '', '', '', 'rencaizhaopin', '/index.php?c=content&a=list&catid=39', '', '1', '0', '1', '', '', 'zhaoping.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('47', '1', '4', '16', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '0', '', '招聘申请', '', '', '', '', '', 'zhaopinshenqing', '/index.php?c=content&a=list&catid=47', '', '0', '0', '1', 'zhaoPinInfo.html', 'zhaoPinInfo.html', 'zhaoPinInfo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('49', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '大师团队', '', '&lt;p&gt;无需更改&lt;/p&gt;', '', '', '', 'dashituandui', '/index.php?c=content&a=list&catid=49', '', '0', '0', '1', '', '', 'dashituandui.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('41', '1', '1', '15', '39', '41,42,43,44,45,46', '0', '', '销售部', '', '', '', '', '', 'xiaoshoubu', '/index.php?c=content&a=list&catid=41', '', '1', '0', '1', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('42', '1', '1', '15', '39', '41,42,43,44,45,46', '0', '', '直营部', '', '', '', '', '', 'zhiyingbu', '/index.php?c=content&a=list&catid=42', '', '0', '0', '1', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('43', '1', '1', '15', '39', '41,42,43,44,45,46', '0', '', '市场部', '', '', '', '', '', 'shichangbu', '/index.php?c=content&a=list&catid=43', '', '0', '0', '1', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('44', '1', '1', '15', '39', '41,42,43,44,45,46', '0', '', '电子商务部', '', '', '', '', '', 'dianzishangwubu', '/index.php?c=content&a=list&catid=44', '', '0', '0', '1', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('45', '1', '1', '15', '39', '41,42,43,44,45,46', '0', '', '行政部', '', '', '', '', '', 'xingzhengbu', '/index.php?c=content&a=list&catid=45', '', '0', '0', '1', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('46', '1', '1', '15', '39', '41,42,43,44,45,46', '0', '', '包装车间', '', '', '', '', '', 'baozhuangchejian', '/index.php?c=content&a=list&catid=46', '', '0', '0', '1', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
+INSERT INTO `ppx_category` VALUES ('48', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '传承工艺', '', '&lt;p&gt;无需更改&lt;/p&gt;', '', '', '', 'chuanchenggongyi', '/index.php?c=content&a=list&catid=48', '', '0', '0', '1', '', '', 'chuanchenggongyi.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
 
 -- ----------------------------
 -- Table structure for `ppx_content`
@@ -146,7 +198,7 @@ DROP TABLE IF EXISTS `ppx_content`;
 CREATE TABLE `ppx_content` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_content
@@ -183,31 +235,46 @@ CREATE TABLE `ppx_content_1` (
 -- ----------------------------
 -- Records of ppx_content_1
 -- ----------------------------
-INSERT INTO `ppx_content_1` VALUES ('1', '2', '9', '轮播1', '', '', '', '/index.php?c=content&a=show&id=1', '1', '1', '0', '1', '0', 'admin', '1487996759', '1487996759');
-INSERT INTO `ppx_content_1` VALUES ('2', '2', '9', '轮播2', '', '', '', '/index.php?c=content&a=show&id=2', '2', '1', '0', '1', '0', 'admin', '1487996777', '1487996777');
-INSERT INTO `ppx_content_1` VALUES ('3', '2', '9', '轮播3', '', '', '', '/index.php?c=content&a=show&id=3', '3', '1', '0', '1', '0', 'admin', '1487996800', '1487996800');
+INSERT INTO `ppx_content_1` VALUES ('1', '2', '9', '轮播1', '', '', '', '/index.php?c=content&a=show&id=1', '1', '1', '0', '1', '0', 'admin', '1487996759', '1490242973');
+INSERT INTO `ppx_content_1` VALUES ('2', '2', '9', '轮播2', '', '', '', '/index.php?c=content&a=show&id=2', '2', '1', '0', '1', '0', 'admin', '1487996777', '1490242960');
+INSERT INTO `ppx_content_1` VALUES ('3', '2', '9', '轮播3', '', '', '', '/index.php?c=content&a=show&id=3', '3', '1', '0', '1', '0', 'admin', '1487996800', '1490242873');
 INSERT INTO `ppx_content_1` VALUES ('4', '4', '10', '品品香', 'uploadfiles/image/201702/7.png', '', '2月13日，品品香研发的“花香白琳工夫红茶加工工艺”获得国家发明专利。', '/index.php?c=content&a=show&id=4', '0', '1', '0', '1', '0', 'admin', '1488002406', '1488002406');
 INSERT INTO `ppx_content_1` VALUES ('5', '4', '10', '4月12日', 'uploadfiles/image/201702/8.png', '', '4月12日，品品香总经理邵克平被福建省人力资源和社会保障厅授予“福建技术能手”荣誉称号。', '/index.php?c=content&a=show&id=5', '0', '1', '0', '1', '0', 'admin', '1488002458', '1488002458');
 INSERT INTO `ppx_content_1` VALUES ('6', '4', '10', '5月21日', 'uploadfiles/image/201702/9.png', '', '5月21日，品品香制定的《紧压白茶》企业标准通过省卫生厅认定。', '/index.php?c=content&a=show&id=6', '0', '1', '0', '1', '0', 'admin', '1488002491', '1488002491');
 INSERT INTO `ppx_content_1` VALUES ('7', '4', '10', '5月24日', 'uploadfiles/image/201702/10.png', '', '5月24日，由品品香所属管阳河山有机茶基地承担建设的福鼎白茶栽培国际级农业标准化示范区，以97.5分的优异成绩顺利通过国家标准委抽查组验收。', '/index.php?c=content&a=show&id=7', '0', '1', '0', '1', '0', 'admin', '1488002516', '1488002516');
 INSERT INTO `ppx_content_1` VALUES ('8', '4', '10', '5月', 'uploadfiles/image/201702/11.png', '', '5月，品品香董事长林健被国家科技部评为“全国优秀科技特派员巡讲团专家组成员”。', '/index.php?c=content&a=show&id=8', '0', '1', '0', '1', '0', 'admin', '1488002544', '1488002544');
-INSERT INTO `ppx_content_1` VALUES ('9', '4', '10', '9月16日-18日', 'uploadfiles/image/201702/13.png', '', '9月16日-18日，品品香获福鼎白茶民进斗茶赛新茶类（白毫银针、白牡丹）、老茶类（白牡丹）共计3项状元', '/index.php?c=content&a=show&id=9', '0', '1', '0', '1', '0', 'admin', '1488002569', '1488004899');
+INSERT INTO `ppx_content_1` VALUES ('9', '4', '10', '9月16日-18日', 'uploadfiles/image/201702/13.png', '', '9月16日-18日，品品香获福鼎白茶民进斗茶赛新茶类（白毫银针、白牡丹）、老茶类（白牡丹）共计3项状元', '/index.php?c=content&a=show&id=9', '0', '1', '0', '1', '0', 'admin', '1488002569', '1490241189');
 INSERT INTO `ppx_content_1` VALUES ('10', '4', '10', '9月16日-17日', 'uploadfiles/image/201702/12.png', '', '', '/index.php?c=content&a=show&id=10', '0', '1', '0', '1', '0', 'admin', '1488002613', '1488002613');
-INSERT INTO `ppx_content_1` VALUES ('11', '6', '11', '产品荣誉 1', 'uploadfiles/image/201702/14.png', '', '', '/index.php?c=content&a=show&id=11', '0', '1', '0', '1', '0', 'admin', '1488006562', '1488006562');
-INSERT INTO `ppx_content_1` VALUES ('12', '6', '11', '荣誉2', 'uploadfiles/image/201702/15.png', '', '', '/index.php?c=content&a=show&id=12', '0', '1', '0', '1', '0', 'admin', '1488006580', '1488006580');
-INSERT INTO `ppx_content_1` VALUES ('13', '7', '11', '荣誉1', 'uploadfiles/image/201702/16.png', '', '', '/index.php?c=content&a=show&id=13', '0', '1', '0', '1', '0', 'admin', '1488006611', '1488006611');
-INSERT INTO `ppx_content_1` VALUES ('14', '12', '1', '测试1', 'uploadfiles/image/201702/17.jpg', '', '内容', '/index.php?c=content&a=show&id=14', '0', '1', '0', '1', '0', 'admin', '1488180880', '1488187328');
-INSERT INTO `ppx_content_1` VALUES ('15', '12', '1', '测试资讯2', 'uploadfiles/image/201702/18.jpg', '', '测试2', '/index.php?c=content&a=show&id=15', '0', '1', '0', '1', '0', 'admin', '1488181531', '1488187488');
-INSERT INTO `ppx_content_1` VALUES ('16', '12', '1', '资讯3', 'uploadfiles/image/201702/19.jpg', '', '资讯2', '/index.php?c=content&a=show&id=16', '0', '1', '0', '1', '0', 'admin', '1488187426', '1488187426');
-INSERT INTO `ppx_content_1` VALUES ('17', '12', '1', '资讯4', 'uploadfiles/image/201702/20.jpg', '', '资讯2vv', '/index.php?c=content&a=show&id=17', '0', '1', '0', '1', '0', 'admin', '1488187444', '1488187444');
-INSERT INTO `ppx_content_1` VALUES ('18', '14', '12', '晒白金礼遇版0731', 'uploadfiles/image/201702/27.jpg', '', '', '/index.php?c=content&a=show&id=18', '0', '1', '0', '1', '0', 'admin', '1488195776', '1488195776');
-INSERT INTO `ppx_content_1` VALUES ('19', '19', '12', '晒白金礼遇版0733', 'uploadfiles/image/201702/34.jpg', '', '', '/index.php?c=content&a=show&id=19', '0', '1', '0', '1', '0', 'admin', '1488196893', '1488196926');
+INSERT INTO `ppx_content_1` VALUES ('11', '6', '11', '产品荣誉 1', 'uploadfiles/image/201702/14.png', '', '', '/index.php?c=content&a=show&id=11', '0', '1', '0', '1', '0', 'admin', '1488006562', '1490243149');
+INSERT INTO `ppx_content_1` VALUES ('26', '7', '11', '金奖', '', '', '', '/index.php?c=content&a=show&id=26', '0', '1', '0', '1', '0', 'admin', '1490243265', '1490243265');
+INSERT INTO `ppx_content_1` VALUES ('13', '7', '11', '荣誉1', 'uploadfiles/image/201702/16.png', '', '', '/index.php?c=content&a=show&id=13', '0', '1', '0', '1', '0', 'admin', '1488006611', '1490243229');
+INSERT INTO `ppx_content_1` VALUES ('18', '14', '12', '晒白金礼遇版0731', 'uploadfiles/image/201702/27.jpg', '', '', '/index.php?c=content&a=show&id=18', '0', '1', '0', '1', '0', 'admin', '1488195776', '1490243339');
+INSERT INTO `ppx_content_1` VALUES ('19', '19', '12', '晒白金礼遇版0733', 'uploadfiles/image/201702/34.jpg', '', '', '/index.php?c=content&a=show&id=19', '0', '1', '0', '1', '0', 'admin', '1488196893', '1490243367');
 INSERT INTO `ppx_content_1` VALUES ('20', '26', '9', '门店轮播1', '', '', '', '/index.php?c=content&a=show&id=20', '0', '1', '0', '1', '0', 'admin', '1488210935', '1488210935');
 INSERT INTO `ppx_content_1` VALUES ('21', '27', '13', '北京三区形象店', '', '', '', '/index.php?c=content&a=show&id=21', '0', '1', '0', '1', '0', 'admin', '1488213080', '1488213080');
-INSERT INTO `ppx_content_1` VALUES ('22', '27', '13', '55151', 'uploadfiles/image/201702/39.jpg', '', '', '/index.php?c=content&a=show&id=22', '0', '1', '0', '1', '0', 'admin', '1488248730', '1488248730');
 INSERT INTO `ppx_content_1` VALUES ('23', '31', '9', '三大标准第一张轮播图', '', '', '', '/index.php?c=content&a=show&id=23', '0', '1', '0', '1', '0', 'admin', '1488269397', '1488269397');
 INSERT INTO `ppx_content_1` VALUES ('24', '31', '9', '三大标准第二张轮播图', '', '', '', '/index.php?c=content&a=show&id=24', '0', '1', '0', '1', '0', 'admin', '1488269410', '1488269410');
 INSERT INTO `ppx_content_1` VALUES ('25', '31', '9', '三大标准第三张轮播图', '', '', '', '/index.php?c=content&a=show&id=25', '0', '1', '0', '1', '0', 'admin', '1488269423', '1488269423');
+INSERT INTO `ppx_content_1` VALUES ('27', '38', '14', '游学1', '', '', '', '/index.php?c=content&a=show&id=27', '0', '1', '0', '1', '0', 'admin', '1490254134', '1490254141');
+INSERT INTO `ppx_content_1` VALUES ('28', '41', '15', '销售主管', '', '', '主管啥的', '/index.php?c=content&a=show&id=28', '0', '1', '0', '1', '0', 'admin', '1490260477', '1490260477');
+
+-- ----------------------------
+-- Table structure for `ppx_content_1_baichayouxue`
+-- ----------------------------
+DROP TABLE IF EXISTS `ppx_content_1_baichayouxue`;
+CREATE TABLE `ppx_content_1_baichayouxue` (
+  `id` int(10) NOT NULL,
+  `catid` smallint(5) NOT NULL,
+  `content` mediumtext NOT NULL,
+  `suofangtu` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `catid` (`catid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ppx_content_1_baichayouxue
+-- ----------------------------
+INSERT INTO `ppx_content_1_baichayouxue` VALUES ('27', '38', '', 'uploadfiles/image/201703/64.jpg');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_chanpin`
@@ -223,6 +290,7 @@ CREATE TABLE `ppx_content_1_chanpin` (
   `jiage` varchar(255) DEFAULT NULL,
   `tianmaodizhi` varchar(255) DEFAULT NULL,
   `jingdongdizhi` varchar(255) DEFAULT NULL,
+  `yulantu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `catid` (`catid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -230,8 +298,8 @@ CREATE TABLE `ppx_content_1_chanpin` (
 -- ----------------------------
 -- Records of ppx_content_1_chanpin
 -- ----------------------------
-INSERT INTO `ppx_content_1_chanpin` VALUES ('18', '14', '', '2007', '高级', '福鼎', '200', '', '');
-INSERT INTO `ppx_content_1_chanpin` VALUES ('19', '19', '', '2017', '高级', '或许', '300', 'http://www.kancloud.cn/dayrui/finecms/237305', 'http://www.kancloud.cn/dayrui/finecms/237305');
+INSERT INTO `ppx_content_1_chanpin` VALUES ('18', '14', '', '2007', '高级', '福鼎', '200', '', '', 'uploadfiles/image/201703/35.jpg');
+INSERT INTO `ppx_content_1_chanpin` VALUES ('19', '19', '', '2017', '高级', '或许', '300', 'http://www.kancloud.cn/dayrui/finecms/237305', 'http://www.kancloud.cn/dayrui/finecms/237305', 'uploadfiles/image/201703/37.jpg');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_down`
@@ -272,8 +340,6 @@ CREATE TABLE `ppx_content_1_extend` (
 -- ----------------------------
 -- Records of ppx_content_1_extend
 -- ----------------------------
-INSERT INTO `ppx_content_1_extend` VALUES ('14', '12', '14', '', '');
-INSERT INTO `ppx_content_1_extend` VALUES ('15', '12', '15,14,16,17', '', '');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_fang`
@@ -317,6 +383,7 @@ CREATE TABLE `ppx_content_1_fazhanlicheng` (
   `catid` smallint(5) NOT NULL,
   `content` mediumtext NOT NULL,
   `shijian` bigint(10) DEFAULT NULL,
+  `yulantu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `catid` (`catid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -324,13 +391,13 @@ CREATE TABLE `ppx_content_1_fazhanlicheng` (
 -- ----------------------------
 -- Records of ppx_content_1_fazhanlicheng
 -- ----------------------------
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('4', '4', '', '1454479080');
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('5', '4', '', '1461650400');
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('6', '4', '', '1463810460');
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('7', '4', '', '1464069660');
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('8', '4', '', '1462082520');
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('9', '4', '', '1474005720');
-INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('10', '4', '', '1487224920');
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('4', '4', '', '1454479080', null);
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('5', '4', '', '1461650400', null);
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('6', '4', '', '1463810460', null);
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('7', '4', '', '1464069660', null);
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('8', '4', '', '1462082520', null);
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('9', '4', '', '1474005720', 'uploadfiles/image/201703/1.png');
+INSERT INTO `ppx_content_1_fazhanlicheng` VALUES ('10', '4', '', '1487224920', null);
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_image`
@@ -357,6 +424,7 @@ CREATE TABLE `ppx_content_1_news` (
   `id` int(10) NOT NULL,
   `catid` smallint(5) NOT NULL,
   `content` mediumtext NOT NULL,
+  `yulantu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `catid` (`catid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -364,10 +432,6 @@ CREATE TABLE `ppx_content_1_news` (
 -- ----------------------------
 -- Records of ppx_content_1_news
 -- ----------------------------
-INSERT INTO `ppx_content_1_news` VALUES ('14', '12', '&lt;p&gt;描述&lt;/p&gt;');
-INSERT INTO `ppx_content_1_news` VALUES ('15', '12', '&lt;p&gt;测试2&lt;/p&gt;');
-INSERT INTO `ppx_content_1_news` VALUES ('16', '12', '&lt;p&gt;资讯2&lt;/p&gt;');
-INSERT INTO `ppx_content_1_news` VALUES ('17', '12', '&lt;p&gt;资讯2vv&lt;/p&gt;');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_qiantaihuandengpian`
@@ -385,9 +449,9 @@ CREATE TABLE `ppx_content_1_qiantaihuandengpian` (
 -- ----------------------------
 -- Records of ppx_content_1_qiantaihuandengpian
 -- ----------------------------
-INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('1', '2', '', 'uploadfiles/image/201702/1.jpg');
-INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('2', '2', '', 'uploadfiles/image/201702/3.jpg');
-INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('3', '2', '', 'uploadfiles/image/201702/5.jpg');
+INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('1', '2', '', 'uploadfiles/image/201703/27.jpg');
+INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('2', '2', '', 'uploadfiles/image/201703/25.jpg');
+INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('3', '2', '', 'uploadfiles/image/201703/23.jpg');
 INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('20', '26', '', 'uploadfiles/image/201702/36.jpg');
 INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('23', '31', '', 'uploadfiles/image/201702/79.jpg');
 INSERT INTO `ppx_content_1_qiantaihuandengpian` VALUES ('24', '31', '', 'uploadfiles/image/201702/81.jpg');
@@ -402,6 +466,7 @@ CREATE TABLE `ppx_content_1_rongyu` (
   `catid` smallint(5) NOT NULL,
   `content` mediumtext NOT NULL,
   `shijian` bigint(10) DEFAULT NULL,
+  `yulantu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `catid` (`catid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -409,9 +474,9 @@ CREATE TABLE `ppx_content_1_rongyu` (
 -- ----------------------------
 -- Records of ppx_content_1_rongyu
 -- ----------------------------
-INSERT INTO `ppx_content_1_rongyu` VALUES ('11', '6', '', '1455779280');
-INSERT INTO `ppx_content_1_rongyu` VALUES ('12', '6', '', '1487228940');
-INSERT INTO `ppx_content_1_rongyu` VALUES ('13', '7', '', '1487228940');
+INSERT INTO `ppx_content_1_rongyu` VALUES ('11', '6', '', '1455779280', 'uploadfiles/image/201703/29.png');
+INSERT INTO `ppx_content_1_rongyu` VALUES ('13', '7', '', '1455692940', 'uploadfiles/image/201703/31.png');
+INSERT INTO `ppx_content_1_rongyu` VALUES ('26', '7', '', '1462940820', 'uploadfiles/image/201703/33.jpg');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_verify`
@@ -449,6 +514,7 @@ CREATE TABLE `ppx_content_1_yingxiaowangluo` (
   `suozaidiqu` varchar(255) DEFAULT NULL,
   `dizhi` varchar(255) DEFAULT NULL,
   `yingyeshijian` varchar(255) DEFAULT NULL,
+  `yulantu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `catid` (`catid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -456,8 +522,24 @@ CREATE TABLE `ppx_content_1_yingxiaowangluo` (
 -- ----------------------------
 -- Records of ppx_content_1_yingxiaowangluo
 -- ----------------------------
-INSERT INTO `ppx_content_1_yingxiaowangluo` VALUES ('21', '27', '', '3', '北京地址哈哈', '开始-结束');
-INSERT INTO `ppx_content_1_yingxiaowangluo` VALUES ('22', '27', '', '4', 'cc', 'vvv');
+INSERT INTO `ppx_content_1_yingxiaowangluo` VALUES ('21', '27', '', '3', '北京地址哈哈', '开始-结束', null);
+
+-- ----------------------------
+-- Table structure for `ppx_content_1_zhaopinzhiwei`
+-- ----------------------------
+DROP TABLE IF EXISTS `ppx_content_1_zhaopinzhiwei`;
+CREATE TABLE `ppx_content_1_zhaopinzhiwei` (
+  `id` int(10) NOT NULL,
+  `catid` smallint(5) NOT NULL,
+  `content` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `catid` (`catid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ppx_content_1_zhaopinzhiwei
+-- ----------------------------
+INSERT INTO `ppx_content_1_zhaopinzhiwei` VALUES ('28', '41', '&lt;p&gt;主管啥的&lt;br/&gt;&lt;/p&gt;');
 
 -- ----------------------------
 -- Table structure for `ppx_favorite`
@@ -489,7 +571,7 @@ DROP TABLE IF EXISTS `ppx_form`;
 CREATE TABLE `ppx_form` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_form
@@ -523,6 +605,40 @@ CREATE TABLE `ppx_form_1_gbook` (
 
 -- ----------------------------
 -- Records of ppx_form_1_gbook
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `ppx_form_1_zhaopinshenqing`
+-- ----------------------------
+DROP TABLE IF EXISTS `ppx_form_1_zhaopinshenqing`;
+CREATE TABLE `ppx_form_1_zhaopinshenqing` (
+  `id` int(10) NOT NULL,
+  `cid` mediumint(8) NOT NULL,
+  `userid` mediumint(8) NOT NULL,
+  `username` char(20) NOT NULL,
+  `listorder` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `status` tinyint(2) unsigned NOT NULL DEFAULT '1',
+  `inputtime` int(10) unsigned NOT NULL DEFAULT '0',
+  `updatetime` int(10) unsigned NOT NULL DEFAULT '0',
+  `ip` char(20) DEFAULT NULL,
+  `xingming` varchar(255) DEFAULT NULL,
+  `xingbie` varchar(255) DEFAULT NULL,
+  `nianling` varchar(255) DEFAULT NULL,
+  `shouji` varchar(255) DEFAULT NULL,
+  `xueli` varchar(255) DEFAULT NULL,
+  `yingpinzhiwei` varchar(255) DEFAULT NULL,
+  `liuyan` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `listorder` (`listorder`),
+  KEY `status` (`status`),
+  KEY `updatetime` (`updatetime`),
+  KEY `inputtime` (`inputtime`),
+  KEY `userid` (`userid`),
+  KEY `cid` (`cid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ppx_form_1_zhaopinshenqing
 -- ----------------------------
 
 -- ----------------------------
@@ -712,22 +828,25 @@ CREATE TABLE `ppx_model` (
   KEY `typeid` (`typeid`),
   KEY `site` (`site`),
   KEY `joinid` (`joinid`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_model
 -- ----------------------------
-INSERT INTO `ppx_model` VALUES ('1', '1', '1', '文章', 'content_1_news', 'category_news.html', 'list_news.html', 'show_news.html', null, 'a:1:{s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
+INSERT INTO `ppx_model` VALUES ('1', '1', '1', '文章', 'content_1_news', 'category_news.html', 'list_news.html', 'show_news.html', null, 'a:1:{s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
 INSERT INTO `ppx_model` VALUES ('2', '1', '1', '图片', 'content_1_image', 'category_image.html', 'list_image.html', 'show_image.html', null, 'a:1:{s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"1\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
 INSERT INTO `ppx_model` VALUES ('3', '1', '1', '房产', 'content_1_fang', 'list_fang.html', 'list_fang.html', 'show_fang.html', null, 'a:1:{s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"1\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
 INSERT INTO `ppx_model` VALUES ('4', '1', '1', '下载', 'content_1_down', 'list_down.html', 'list_down.html', 'show_down.html', null, 'a:1:{s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"1\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
 INSERT INTO `ppx_model` VALUES ('6', '1', '2', '个人会员', 'member_geren', 'category_geren.html', 'list_geren.html', 'show_geren.html', null, '');
 INSERT INTO `ppx_model` VALUES ('7', '1', '3', '留言', 'form_1_gbook', 'post_gbook.html', 'list_gbook.html', 'show_gbook.html', '8', 'a:1:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}}');
-INSERT INTO `ppx_model` VALUES ('10', '1', '1', '发展历程', 'content_1_fazhanlicheng', 'category.html', 'list.html', 'show.html', null, 'a:2:{s:4:\"auth\";a:4:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"1\";s:9:\"modelpost\";a:1:{i:0;s:1:\"6\";}s:9:\"grouppost\";a:5:{i:0;s:1:\"5\";i:1;s:1:\"4\";i:2;s:1:\"3\";i:3;s:1:\"2\";i:4;s:1:\"1\";}}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
+INSERT INTO `ppx_model` VALUES ('10', '1', '1', '发展历程', 'content_1_fazhanlicheng', 'category.html', 'list.html', 'show.html', null, 'a:2:{s:4:\"auth\";a:4:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"1\";s:9:\"modelpost\";a:1:{i:0;s:1:\"6\";}s:9:\"grouppost\";a:5:{i:0;s:1:\"5\";i:1;s:1:\"4\";i:2;s:1:\"3\";i:3;s:1:\"2\";i:4;s:1:\"1\";}}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"1\";}}}');
 INSERT INTO `ppx_model` VALUES ('9', '1', '1', '前台幻灯片', 'content_1_qiantaihuandengpian', 'index.html', 'index.html', 'index.html', null, 'a:2:{s:4:\"auth\";a:4:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"1\";s:9:\"modelpost\";a:1:{i:0;s:1:\"6\";}s:9:\"grouppost\";a:5:{i:0;s:1:\"5\";i:1;s:1:\"4\";i:2;s:1:\"3\";i:3;s:1:\"2\";i:4;s:1:\"1\";}}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:12:\"备注名称\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
-INSERT INTO `ppx_model` VALUES ('11', '1', '1', '荣誉', 'content_1_rongyu', 'rongyu.html', 'rongyu.html', 'rongyu.html', null, 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
-INSERT INTO `ppx_model` VALUES ('12', '1', '1', '产品', 'content_1_chanpin', 'index.html', 'list.htmlindex', 'index.html', '0', 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
-INSERT INTO `ppx_model` VALUES ('13', '1', '1', '营销网络', 'content_1_yingxiaowangluo', 'category_yingxiaowangluo.html', 'list_yingxiaowangluo.html', 'show_yingxiaowangluo.html', '0', 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"1\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
+INSERT INTO `ppx_model` VALUES ('11', '1', '1', '荣誉', 'content_1_rongyu', 'rongyu.html', 'rongyu.html', 'rongyu.html', null, 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
+INSERT INTO `ppx_model` VALUES ('12', '1', '1', '产品', 'content_1_chanpin', 'index.html', 'list.htmlindex', 'index.html', '0', 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
+INSERT INTO `ppx_model` VALUES ('13', '1', '1', '营销网络', 'content_1_yingxiaowangluo', 'category_yingxiaowangluo.html', 'list_yingxiaowangluo.html', 'show_yingxiaowangluo.html', '0', 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
+INSERT INTO `ppx_model` VALUES ('14', '1', '1', '白茶游学', 'content_1_baichayouxue', 'youxue.html', 'youxue.html', 'youxue.html', null, 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
+INSERT INTO `ppx_model` VALUES ('15', '1', '1', '招聘职位', 'content_1_zhaopinzhiwei', 'zhaoping.html', 'zhaoping.html', 'zhaoping.html', null, 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:7:\"default\";a:4:{s:5:\"title\";a:2:{s:4:\"name\";s:6:\"标题\";s:4:\"show\";s:1:\"1\";}s:5:\"thumb\";a:2:{s:4:\"name\";s:9:\"缩略图\";s:4:\"show\";s:1:\"0\";}s:8:\"keywords\";a:2:{s:4:\"name\";s:9:\"关键字\";s:4:\"show\";s:1:\"0\";}s:11:\"description\";a:2:{s:4:\"name\";s:6:\"描述\";s:4:\"show\";s:1:\"0\";}}}');
+INSERT INTO `ppx_model` VALUES ('16', '1', '3', '招聘申请', 'form_1_zhaopinshenqing', 'zhaoPinInfo.html', 'zhaoPinInfo.html', 'zhaoPinInfo.html', null, 'a:2:{s:4:\"auth\";a:2:{s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";}s:4:\"form\";a:14:{s:4:\"post\";s:1:\"0\";s:4:\"code\";s:1:\"0\";s:5:\"check\";s:1:\"0\";s:6:\"member\";s:1:\"0\";s:4:\"edit\";s:1:\"0\";s:3:\"num\";s:1:\"0\";s:2:\"ip\";s:1:\"5\";s:8:\"pagesize\";s:2:\"10\";s:4:\"show\";a:6:{i:0;s:8:\"xingming\";i:1;s:7:\"xingbie\";i:2;s:8:\"nianling\";i:3;s:6:\"shouji\";i:4;s:5:\"xueli\";i:5;s:13:\"yingpinzhiwei\";}s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:3:\"url\";a:3:{s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"show\";s:0:\"\";}s:8:\"callback\";s:0:\"\";}}');
 
 -- ----------------------------
 -- Table structure for `ppx_model_field`
@@ -752,12 +871,12 @@ CREATE TABLE `ppx_model_field` (
   `disabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`fieldid`),
   KEY `modelid` (`modelid`)
-) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=77 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_model_field
 -- ----------------------------
-INSERT INTO `ppx_model_field` VALUES ('1', '1', 'content', '内容', '', '0', '', '1', '', '0', '', '', 'editor', 'a:3:{s:5:\"width\";s:2:\"80\";s:6:\"height\";s:3:\"500\";s:4:\"type\";s:1:\"1\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('1', '1', 'content', '内容', '', '0', '', '1', '', '0', '', '', 'editor', 'a:3:{s:5:\"width\";s:2:\"80\";s:6:\"height\";s:3:\"500\";s:4:\"type\";s:1:\"1\";}', '1', '0');
 INSERT INTO `ppx_model_field` VALUES ('2', '2', 'content', '内容', '', '0', '', '1', '', '0', '', '', 'editor', 'a:3:{s:5:\"width\";s:2:\"80\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"0\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('3', '2', 'images', '上传图片', 'TEXT', '0', '', '1', '', '0', '', '', 'files', 'a:2:{s:4:\"type\";s:16:\"jpg,jpeg,png,gif\";s:4:\"size\";s:1:\"2\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('4', '3', 'content', '内容', '', '0', '', '1', '', '0', '', '', 'editor', 'a:3:{s:5:\"width\";s:2:\"90\";s:6:\"height\";s:3:\"200\";s:4:\"type\";s:1:\"0\";}', '99', '0');
@@ -796,22 +915,37 @@ INSERT INTO `ppx_model_field` VALUES ('40', '7', 'neirong', '内容', 'TEXT', '2
 INSERT INTO `ppx_model_field` VALUES ('41', '7', 'xingming', '姓名', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"200\";s:7:\"default\";s:0:\"\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('42', '7', 'dianhua', '电话', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"200\";s:7:\"default\";s:0:\"\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('44', '9', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '0', '1');
-INSERT INTO `ppx_model_field` VALUES ('45', '9', 'zhanshitupian', '展示图片', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:4:\"1900\";s:6:\"height\";s:3:\"900\";s:4:\"size\";s:1:\"2\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('46', '10', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '0', '1');
-INSERT INTO `ppx_model_field` VALUES ('47', '10', 'shijian', '时间', '', '', '', '1', '', '1', '', '', 'date', 'a:2:{s:5:\"width\";s:3:\"150\";s:4:\"type\";s:17:\"%Y-%m-%d %H:%M:%S\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('45', '9', 'zhanshitupian', '展示图片', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:4:\"1900\";s:6:\"height\";s:3:\"700\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('46', '10', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '1', '1');
+INSERT INTO `ppx_model_field` VALUES ('47', '10', 'shijian', '时间', '', '', '', '1', '', '1', '', '', 'date', 'a:2:{s:5:\"width\";s:3:\"150\";s:4:\"type\";s:17:\"%Y-%m-%d %H:%M:%S\";}', '2', '0');
 INSERT INTO `ppx_model_field` VALUES ('48', '11', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '0', '1');
-INSERT INTO `ppx_model_field` VALUES ('49', '11', 'shijian', '时间', '', '', '', '1', '', '1', '', '', 'date', 'a:2:{s:5:\"width\";s:3:\"150\";s:4:\"type\";s:17:\"%Y-%m-%d %H:%M:%S\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('50', '12', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '0', '1');
-INSERT INTO `ppx_model_field` VALUES ('51', '12', 'nianfen', '年份', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('52', '12', 'dengji', '等级', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('53', '12', 'chandi', '产地', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('54', '12', 'jiage', '价格', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('55', '12', 'tianmaodizhi', '天猫地址', 'VARCHAR', '500', '', '1', '', '0', '', '', 'wurl', 'a:1:{s:4:\"size\";s:3:\"400\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('56', '12', 'jingdongdizhi', '京东地址', 'VARCHAR', '500', '', '1', '', '0', '', '', 'wurl', 'a:1:{s:4:\"size\";s:3:\"400\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('57', '13', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '0', '1');
-INSERT INTO `ppx_model_field` VALUES ('58', '13', 'suozaidiqu', '所在地区', 'VARCHAR', '500', '', '1', '', '1', '', '', 'linkage', 'a:3:{s:2:\"id\";s:1:\"2\";s:5:\"level\";s:1:\"3\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('59', '13', 'dizhi', '地址', 'VARCHAR', '500', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('60', '13', 'yingyeshijian', '营业时间', 'VARCHAR', '500', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('49', '11', 'shijian', '时间', '', '', '', '1', '', '1', '', '', 'date', 'a:2:{s:5:\"width\";s:3:\"150\";s:4:\"type\";s:17:\"%Y-%m-%d %H:%M:%S\";}', '1', '0');
+INSERT INTO `ppx_model_field` VALUES ('50', '12', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '1', '1');
+INSERT INTO `ppx_model_field` VALUES ('51', '12', 'nianfen', '年份', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '2', '0');
+INSERT INTO `ppx_model_field` VALUES ('52', '12', 'dengji', '等级', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '3', '0');
+INSERT INTO `ppx_model_field` VALUES ('53', '12', 'chandi', '产地', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '4', '0');
+INSERT INTO `ppx_model_field` VALUES ('54', '12', 'jiage', '价格', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '5', '0');
+INSERT INTO `ppx_model_field` VALUES ('55', '12', 'tianmaodizhi', '天猫地址', 'VARCHAR', '500', '', '1', '', '0', '', '', 'wurl', 'a:1:{s:4:\"size\";s:3:\"400\";}', '6', '0');
+INSERT INTO `ppx_model_field` VALUES ('56', '12', 'jingdongdizhi', '京东地址', 'VARCHAR', '500', '', '1', '', '0', '', '', 'wurl', 'a:1:{s:4:\"size\";s:3:\"400\";}', '7', '0');
+INSERT INTO `ppx_model_field` VALUES ('57', '13', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '1', '1');
+INSERT INTO `ppx_model_field` VALUES ('58', '13', 'suozaidiqu', '所在地区', 'VARCHAR', '500', '', '1', '', '1', '', '', 'linkage', 'a:3:{s:2:\"id\";s:1:\"2\";s:5:\"level\";s:1:\"3\";s:7:\"default\";s:0:\"\";}', '2', '0');
+INSERT INTO `ppx_model_field` VALUES ('59', '13', 'dizhi', '地址', 'VARCHAR', '500', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '3', '0');
+INSERT INTO `ppx_model_field` VALUES ('60', '13', 'yingyeshijian', '营业时间', 'VARCHAR', '500', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '4', '0');
+INSERT INTO `ppx_model_field` VALUES ('62', '1', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"180\";s:6:\"height\";s:3:\"103\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('63', '10', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"180\";s:6:\"height\";s:3:\"122\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('64', '11', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"223\";s:6:\"height\";s:3:\"167\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('65', '12', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"309\";s:6:\"height\";s:3:\"261\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('66', '13', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"700\";s:6:\"height\";s:3:\"394\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('67', '14', 'content', '内容', '', '', '', '1', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '0', '1');
+INSERT INTO `ppx_model_field` VALUES ('68', '14', 'suofangtu', '展示图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:4:\"1000\";s:6:\"height\";s:3:\"446\";s:4:\"size\";s:1:\"2\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('69', '15', 'content', '内容', '', '', '', '1', '', '0', '', '', 'editor', '', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('70', '16', 'xingming', '姓名', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('71', '16', 'xingbie', '性别', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('72', '16', 'nianling', '年龄', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('73', '16', 'shouji', '手机', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('74', '16', 'xueli', '学历', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('75', '16', 'yingpinzhiwei', '应聘职位', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('76', '16', 'liuyan', '留言', 'VARCHAR', '1000', '', '1', '', '1', '', '', 'textarea', 'a:3:{s:5:\"width\";s:3:\"400\";s:6:\"height\";s:2:\"90\";s:7:\"default\";s:0:\"\";}', '0', '0');
 
 -- ----------------------------
 -- Table structure for `ppx_oauth`
@@ -1027,4 +1161,4 @@ CREATE TABLE `ppx_user` (
 -- ----------------------------
 -- Records of ppx_user
 -- ----------------------------
-INSERT INTO `ppx_user` VALUES ('1', null, 'admin', '42253096b6160c65e3ebaf72d7a788a3', '5b4fe9777d', '1', '192.168.1.8', '1488202638', '', '1488248306', null, '网站创始人', null);
+INSERT INTO `ppx_user` VALUES ('1', null, 'admin', '42253096b6160c65e3ebaf72d7a788a3', '5b4fe9777d', '1', '', '1490409443', '', '1490432670', null, '网站创始人', null);

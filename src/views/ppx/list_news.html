@@ -8,7 +8,7 @@
 {if !array_key_exists($timeYear, $timeArr)}
 {php $timeArr[$timeYear] = array();}
 {/if}
-{php array_push($timeArr[$timeYear], array('year'=>$timeYear, 'mouth'=> $timeMouth, 'day'=>$timeDay, 'description'=>$t['description'], 'thumb'=> $t['thumb'], 'title'=>$t['title'], 'url'=>$t['url']));}
+{php array_push($timeArr[$timeYear], array('year'=>$timeYear, 'mouth'=> $timeMouth, 'day'=>$timeDay, 'description'=>$t['description'], 'thumb'=> $t['yulantu'], 'title'=>$t['title'], 'url'=>$t['url']));}
 {/list}
 <link rel="stylesheet" href="{SITE_THEME}css/idangerous.swiper2.7.6.css">
 <style>
@@ -33,7 +33,7 @@
     }
 </style>
 <div class="container-title">
-    <img src="{$cats[12][image]}" />
+    <a href="{$meta_description}"><img src="{$cats[12][image]}" /></a>
 </div>
 <div class="ry-body" style="position: relative;margin-top: -8px;">
     <div class="ry-top-hr"></div>

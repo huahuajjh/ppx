@@ -6,12 +6,12 @@
             </ul>
             <ul class="footer-menu-contact-we">
                 <li><a href="<?php echo SITE_THEME; ?>html/fw.html">防伪查询</a></li>
-                <li><a href="#">人才招聘</a></li>
+                <li><a href="/index.php?c=content&a=list&catid=39">人才招聘</a></li>
                 <li class="phone">客服热线：400-8816-619</li>
             </ul>
             <div class="clear"></div>
         </div>
-        <div class="copyright"><span>COPYRIGHT 2015.版权所有 福建品品香茶叶有限公司</span> <span>闽ICP备10202963号—1</span></div>
+        <div class="copyright"><span>COPYRIGHT 2015.版权所有 福建品品香茶叶有限公司</span> <span>闽ICP备10202963号—1</span> <span>技术支持：万国云端</span></div>
     </div>
 </body>
 </html>

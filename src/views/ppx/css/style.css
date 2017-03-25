@@ -246,7 +246,7 @@ p, ul, ol {
 }
 
 .banner-body .banner-menu .banner-menu-body li a{
-    width: 100px;
+    width: 130px;
     font-size: 14px;
     display: block;
     color: #fff;
@@ -254,6 +254,19 @@ p, ul, ol {
 
 .banner-body .banner-menu .banner-menu-body li a.active, .banner-body .banner-menu .banner-menu-body li a:hover{
   text-decoration: underline !important;
+}
+
+.banner-body .banner-menu .banner-menu-body li.fg{
+    border-left: 2px solid #fff;
+    height: 25px;
+    position: relative;
+    top: -3px;
+    padding-left: 10px;
+}
+
+.banner-body .banner-menu .banner-menu-body li.fg a{
+    position: relative;
+    top: 3px;
 }
 
 .banner-image {
@@ -285,6 +298,41 @@ p, ul, ol {
     width: 17px;
     height: 30px;
     z-index: 2;
+}
+
+.youxue-image {
+    position: relative;
+}
+
+.youxue-image img{
+    width: 100%;
+    display: block;
+}
+
+.youxue-image .arrow-right {
+    background: url("../image/yjta.png") no-repeat left bottom;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: -140px;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.youxue-image .arrow-left {
+    background: url("../image/zjtb.png") no-repeat left top;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-left: -140px;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .bottom-menu {
@@ -452,7 +500,7 @@ p, ul, ol {
     position: relative;
 }
 
-.container-title > img {
+.container-title img {
     width: 100%;
 }
 
@@ -1343,6 +1391,7 @@ hr.hh {
     float: left;
     width: 50%;
     margin-top: 40px;
+    height: 70px;
 }
 
 .mendian-list-data li h2{

@@ -6,6 +6,6 @@ if (!defined('IN_FINECMS')) exit();
  */
 return array(
 
-	'1'  => 'localhost', 
+	'1'  => 'www.pinpinxiang.cn', 
 
 );

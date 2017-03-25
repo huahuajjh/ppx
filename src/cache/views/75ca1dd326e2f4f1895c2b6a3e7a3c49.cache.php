@@ -1,4 +1,4 @@
-<?php $indexc = 0;  include $this->_include('./temp/head.html');  $timeArr = array();  $return = $this->_listdata("catid=12 more=1 cache=36000 order=updatetime_asc"); extract($return); $count=count($result); if (is_array($result)) { foreach ($result as $key=>$t) {  $timeYear = date("Y", $t['updatetime']);  $timeMouth = date("m", $t['updatetime']);  $timeDay = date("d", $t['updatetime']);  if (!array_key_exists($timeYear, $timeArr)) {  $timeArr[$timeYear] = array();  }  array_push($timeArr[$timeYear], array('year'=>$timeYear, 'mouth'=> $timeMouth, 'day'=>$timeDay, 'description'=>$t['description'], 'thumb'=> $t['thumb'], 'title'=>$t['title'], 'url'=>$t['url']));  } } ?>
+<?php $indexc = 0;  include $this->_include('./temp/head.html');  $timeArr = array();  $return = $this->_listdata("catid=12 more=1 cache=36000 order=updatetime_asc"); extract($return); $count=count($result); if (is_array($result)) { foreach ($result as $key=>$t) {  $timeYear = date("Y", $t['updatetime']);  $timeMouth = date("m", $t['updatetime']);  $timeDay = date("d", $t['updatetime']);  if (!array_key_exists($timeYear, $timeArr)) {  $timeArr[$timeYear] = array();  }  array_push($timeArr[$timeYear], array('year'=>$timeYear, 'mouth'=> $timeMouth, 'day'=>$timeDay, 'description'=>$t['description'], 'thumb'=> $t['yulantu'], 'title'=>$t['title'], 'url'=>$t['url']));  } } ?>
 <link rel="stylesheet" href="<?php echo SITE_THEME; ?>css/idangerous.swiper2.7.6.css">
 <style>
     .swiper-container {
@@ -22,7 +22,7 @@
     }
 </style>
 <div class="container-title">
-    <img src="<?php echo $cats[12][image]; ?>" />
+    <a href="<?php echo $meta_description; ?>"><img src="<?php echo $cats[12][image]; ?>" /></a>
 </div>
 <div class="ry-body" style="position: relative;margin-top: -8px;">
     <div class="ry-top-hr"></div>

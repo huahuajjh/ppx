@@ -22,11 +22,11 @@
         <div class="bottom-news">
             <h2>相关阅读 <span>/</span> NEWS</h2>
             <ul>
-                {list action=relation id=$id return=xg}
+                {list action=relation id=$id more=1 return=xg}
                 <li>
                     <a href="{$xg['url']}">
                         <h3>{$xg['title']}</h3>
-                        <img src="{$xg['thumb']}" alt="">
+                        <img src="{$xg['yulantu']}" alt="">
                         <span>{$xg['description']}</span>
                         <p>
                             <span class="time">{date("Y-m-d H:i:s", $xg['updatetime'])}</span>

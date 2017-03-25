@@ -1,0 +1,89 @@
+{php $indexc = 3;}
+{template ./temp/head.html}
+<style>
+    .youxue-image-list li {
+        float: left;
+        width: 20%;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .youxue-image-list li:first-child {
+        padding-left: 0;
+    }
+
+    .youxue-image-list li:last-child {
+        padding-right: 0;
+    }
+
+    .youxue-image-list li img{
+        display: block;
+        width: 100%;
+    }
+
+    .youxue-image-list:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+</style>
+<link rel="stylesheet" href="{SITE_THEME}css/idangerous.swiper2.7.6.css">
+<div class="pinpai-top-bg">
+    <img src="{block(60)}" alt="">
+</div>
+<div class="pinpai-top-bg">
+    <img src="{block(61)}" alt="">
+</div>
+<div class="pinpai-top-bg">
+    <img src="{block(62)}" alt="">
+</div>
+<div style="background: #FDFDFD">
+    <div class="container-body" style="padding: 20px 0;">
+        <h2 style="color: #9F7E46;text-align: center;font-size: 40px;margin: 0;padding: 30px;">往期回顾</h2>
+        <div class="youxue-image">
+            <a class="arrow-left"></a>
+            <a class="arrow-right"></a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {list catid=38 more=1 cache=36000 order=listorder_asc}
+                    <div class="swiper-slide">
+                        <img src="{$t['suofangtu']}">
+                    </div>
+                    {/list}
+                </div>
+            </div>
+        </div>
+        <ul class="youxue-image-list">
+            {php $i = 0;}
+            {list catid=38 more=1 cache=36000 order=listorder_asc}
+            <li onclick="goIndex({$i})">
+                <img src="{$t['suofangtu']}">
+            </li>
+            {php $i++;}
+            {/list}
+        </ul>
+    </div>
+</div>
+<script src="{SITE_THEME}js/idangerous.swiper2.7.6.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        loop:true,
+        calculateHeight: true,
+        autoplay: 5000,
+        updateOnImagesReady : true
+    })
+    $('.arrow-left').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipePrev()
+    })
+    $('.arrow-right').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipeNext()
+    })
+
+    function goIndex(index) {
+        mySwiper.swipeTo(index, 1000, false);
+    }
+</script>
+{template ./temp/footer.html}

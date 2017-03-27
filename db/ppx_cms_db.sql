@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-27 10:56:03
+Date: 2017-03-27 16:00:13
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -26,7 +26,7 @@ CREATE TABLE `ppx_block` (
   `name` varchar(50) NOT NULL,
   `content` mediumtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=76 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_block
@@ -104,6 +104,8 @@ INSERT INTO `ppx_block` VALUES ('70', '1', '2', '大师团队-2', 'uploadfiles/i
 INSERT INTO `ppx_block` VALUES ('71', '1', '2', '大师团队-3', 'uploadfiles/image/201703/81.jpg');
 INSERT INTO `ppx_block` VALUES ('72', '1', '1', '招商加盟', '#招商加盟');
 INSERT INTO `ppx_block` VALUES ('73', '1', '1', '天猫旗舰店', '#天猫旗舰店');
+INSERT INTO `ppx_block` VALUES ('74', '1', '2', '微信二维码', 'uploadfiles/image/201703/84.jpg');
+INSERT INTO `ppx_block` VALUES ('75', '1', '2', '微博二维码', 'uploadfiles/image/201703/85.jpg');
 
 -- ----------------------------
 -- Table structure for `ppx_category`
@@ -168,8 +170,8 @@ INSERT INTO `ppx_category` VALUES ('26', '1', '1', '9', '25', '26,27', '0', '', 
 INSERT INTO `ppx_category` VALUES ('21', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '珍藏版', 'uploadfiles/image/201702/31.jpg', '', '珍藏版', '', '极致好茶·珍藏典范', 'ppxzhencangban', '/index.php?c=content&a=list&catid=21', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('22', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '简装版', 'uploadfiles/image/201702/32.jpg', '', '简装版', '', '简装生活·随心所欲', 'ppxjianzhuangban', '/index.php?c=content&a=list&catid=22', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('23', '1', '1', '12', '18', '19,20,21,22,23', '0', '', '有机茶', 'uploadfiles/image/201702/33.jpg', '', '有机茶', '', '有机标准·绿色生活', 'ppxyoujicha', '/index.php?c=content&a=list&catid=23', '', '0', '0', '1', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'pinpinxiangchanpin.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('25', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '26,27', '营销网络', 'uploadfiles/image/201702/35.jpg', '&lt;p&gt;营销网络&lt;/p&gt;', '', '', '', 'yingxiaowangluo', '/index.php?c=content&a=list&catid=25', '', '2', '0', '1', '', '', 'yingxiaowangluo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
-INSERT INTO `ppx_category` VALUES ('27', '1', '1', '13', '25', '26,27', '0', '', '门店信息', 'uploadfiles/image/201702/38.jpg', '', '', '', '', 'mendianxinxi', '/index.php?c=content&a=list&catid=27', '', '1', '0', '1', 'yingxiaowangluolist.html', 'yingxiaowangluolist.html', 'yingxiaowangluoInfo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('25', '1', '2', '0', '0', '2,4,7,6,12,13,18,25,31,38,39,47,11', '1', '26,27', '营销网络', 'uploadfiles/image/201702/35.jpg', '&lt;p&gt;营销网络&lt;/p&gt;', '', '', '', 'yingxiaowangluo', '/index.php?c=content&a=list&catid=25', '', '3', '0', '1', '', '', 'yingxiaowangluo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}}', '2');
+INSERT INTO `ppx_category` VALUES ('27', '1', '1', '13', '25', '26,27', '0', '', '门店信息', 'uploadfiles/image/201702/38.jpg', '', '', '', '', 'mendianxinxi', '/index.php?c=content&a=list&catid=27', '', '2', '0', '1', 'yingxiaowangluolist.html', 'yingxiaowangluolist.html', 'yingxiaowangluoInfo.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('30', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '空页面展示', '', '&lt;p&gt;空页面展示&lt;/p&gt;', '', '', '', 'kongyemianzhanshi', '/index.php?c=content&a=list&catid=30', '', '0', '0', '1', '', '', 'downServer.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
 INSERT INTO `ppx_category` VALUES ('28', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '白茶庄园', '', '&lt;p&gt;白茶庄园&lt;/p&gt;', '', '', '', 'baichazhuangyuan', '/index.php?c=content&a=list&catid=28', '', '0', '0', '1', '', '', 'teabase.html', 'a:6:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:1:\"0\";s:9:\"adminpost\";s:1:\"0\";s:10:\"memberpost\";s:1:\"0\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:8:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";s:7:\"catjoin\";s:1:\"/\";}}', '2');
 INSERT INTO `ppx_category` VALUES ('29', '1', '2', '0', '11', '3,8,9,10,30,28,29,33,37,49,48', '0', '', '茶园基地', '', '&lt;p&gt;茶园基地&lt;/p&gt;', '', '', '', 'chayuanjidi', '/index.php?c=content&a=list&catid=29', '', '0', '0', '1', '', '', 'whitetea.html', 'a:10:{s:8:\"document\";s:0:\"\";s:10:\"verifypost\";s:0:\"\";s:9:\"adminpost\";s:0:\"\";s:10:\"memberpost\";s:0:\"\";s:9:\"guestpost\";s:0:\"\";s:3:\"url\";a:7:{s:3:\"use\";s:1:\"0\";s:6:\"tohtml\";s:1:\"0\";s:7:\"htmldir\";s:4:\"html\";s:4:\"list\";s:0:\"\";s:9:\"list_page\";s:0:\"\";s:4:\"show\";s:0:\"\";s:9:\"show_page\";s:0:\"\";}s:9:\"modelpost\";s:0:\"\";s:8:\"rolepost\";s:0:\"\";s:9:\"grouppost\";s:0:\"\";s:10:\"verifyrole\";s:0:\"\";}', '2');
@@ -198,7 +200,7 @@ DROP TABLE IF EXISTS `ppx_content`;
 CREATE TABLE `ppx_content` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ppx_content
@@ -246,12 +248,13 @@ INSERT INTO `ppx_content_1` VALUES ('8', '4', '10', '5月', 'uploadfiles/image/2
 INSERT INTO `ppx_content_1` VALUES ('9', '4', '10', '9月16日-18日', 'uploadfiles/image/201702/13.png', '', '9月16日-18日，品品香获福鼎白茶民进斗茶赛新茶类（白毫银针、白牡丹）、老茶类（白牡丹）共计3项状元', '/index.php?c=content&a=show&id=9', '0', '1', '0', '1', '0', 'admin', '1488002569', '1490241189');
 INSERT INTO `ppx_content_1` VALUES ('10', '4', '10', '9月16日-17日', 'uploadfiles/image/201702/12.png', '', '', '/index.php?c=content&a=show&id=10', '0', '1', '0', '1', '0', 'admin', '1488002613', '1488002613');
 INSERT INTO `ppx_content_1` VALUES ('11', '6', '11', '产品荣誉 1', 'uploadfiles/image/201702/14.png', '', '', '/index.php?c=content&a=show&id=11', '0', '1', '0', '1', '0', 'admin', '1488006562', '1490243149');
-INSERT INTO `ppx_content_1` VALUES ('26', '7', '11', '金奖', '', '', '', '/index.php?c=content&a=show&id=26', '0', '1', '0', '1', '0', 'admin', '1490243265', '1490243265');
+INSERT INTO `ppx_content_1` VALUES ('26', '7', '11', '金奖', '', '', '', '/index.php?c=content&a=show&id=26', '0', '1', '0', '1', '0', 'admin', '1490243265', '1490598524');
 INSERT INTO `ppx_content_1` VALUES ('13', '7', '11', '荣誉1', 'uploadfiles/image/201702/16.png', '', '', '/index.php?c=content&a=show&id=13', '0', '1', '0', '1', '0', 'admin', '1488006611', '1490243229');
+INSERT INTO `ppx_content_1` VALUES ('30', '27', '13', '33', '', '', '', '/index.php?c=content&a=show&id=30', '0', '1', '0', '1', '0', 'admin', '1490595224', '1490596017');
 INSERT INTO `ppx_content_1` VALUES ('18', '14', '12', '晒白金礼遇版0731', 'uploadfiles/image/201702/27.jpg', '', '', '/index.php?c=content&a=show&id=18', '0', '1', '0', '1', '0', 'admin', '1488195776', '1490243339');
 INSERT INTO `ppx_content_1` VALUES ('19', '19', '12', '晒白金礼遇版0733', 'uploadfiles/image/201702/34.jpg', '', '', '/index.php?c=content&a=show&id=19', '0', '1', '0', '1', '0', 'admin', '1488196893', '1490243367');
 INSERT INTO `ppx_content_1` VALUES ('20', '26', '9', '门店轮播1', '', '', '', '/index.php?c=content&a=show&id=20', '0', '1', '0', '1', '0', 'admin', '1488210935', '1488210935');
-INSERT INTO `ppx_content_1` VALUES ('21', '27', '13', '北京三区形象店', '', '', '', '/index.php?c=content&a=show&id=21', '0', '1', '0', '1', '0', 'admin', '1488213080', '1488213080');
+INSERT INTO `ppx_content_1` VALUES ('21', '27', '13', '北京三区形象店', '', '', '', '/index.php?c=content&a=show&id=21', '0', '1', '0', '1', '0', 'admin', '1488213080', '1490595085');
 INSERT INTO `ppx_content_1` VALUES ('23', '31', '9', '三大标准第一张轮播图', '', '', '', '/index.php?c=content&a=show&id=23', '0', '1', '0', '1', '0', 'admin', '1488269397', '1488269397');
 INSERT INTO `ppx_content_1` VALUES ('24', '31', '9', '三大标准第二张轮播图', '', '', '', '/index.php?c=content&a=show&id=24', '0', '1', '0', '1', '0', 'admin', '1488269410', '1488269410');
 INSERT INTO `ppx_content_1` VALUES ('25', '31', '9', '三大标准第三张轮播图', '', '', '', '/index.php?c=content&a=show&id=25', '0', '1', '0', '1', '0', 'admin', '1488269423', '1488269423');
@@ -476,7 +479,7 @@ CREATE TABLE `ppx_content_1_rongyu` (
 -- ----------------------------
 INSERT INTO `ppx_content_1_rongyu` VALUES ('11', '6', '', '1455779280', 'uploadfiles/image/201703/29.png');
 INSERT INTO `ppx_content_1_rongyu` VALUES ('13', '7', '', '1455692940', 'uploadfiles/image/201703/31.png');
-INSERT INTO `ppx_content_1_rongyu` VALUES ('26', '7', '', '1462940820', 'uploadfiles/image/201703/33.jpg');
+INSERT INTO `ppx_content_1_rongyu` VALUES ('26', '7', '', '1431491220', 'uploadfiles/image/201703/33.jpg');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_verify`
@@ -522,7 +525,8 @@ CREATE TABLE `ppx_content_1_yingxiaowangluo` (
 -- ----------------------------
 -- Records of ppx_content_1_yingxiaowangluo
 -- ----------------------------
-INSERT INTO `ppx_content_1_yingxiaowangluo` VALUES ('21', '27', '', '3', '北京地址哈哈', '开始-结束', null);
+INSERT INTO `ppx_content_1_yingxiaowangluo` VALUES ('21', '27', '', '7', '北京地址哈哈', '开始-结束', 'uploadfiles/image/201703/86.jpg');
+INSERT INTO `ppx_content_1_yingxiaowangluo` VALUES ('30', '27', '', '3', '34', '', 'uploadfiles/image/201703/88.jpg');
 
 -- ----------------------------
 -- Table structure for `ppx_content_1_zhaopinzhiwei`
@@ -930,7 +934,7 @@ INSERT INTO `ppx_model_field` VALUES ('56', '12', 'jingdongdizhi', '京东地址
 INSERT INTO `ppx_model_field` VALUES ('57', '13', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '1', '1');
 INSERT INTO `ppx_model_field` VALUES ('58', '13', 'suozaidiqu', '所在地区', 'VARCHAR', '500', '', '1', '', '1', '', '', 'linkage', 'a:3:{s:2:\"id\";s:1:\"2\";s:5:\"level\";s:1:\"3\";s:7:\"default\";s:0:\"\";}', '2', '0');
 INSERT INTO `ppx_model_field` VALUES ('59', '13', 'dizhi', '地址', 'VARCHAR', '500', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '3', '0');
-INSERT INTO `ppx_model_field` VALUES ('60', '13', 'yingyeshijian', '营业时间', 'VARCHAR', '500', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '4', '0');
+INSERT INTO `ppx_model_field` VALUES ('60', '13', 'yingyeshijian', '联系电话', 'VARCHAR', '500', '', '1', '', '0', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '4', '0');
 INSERT INTO `ppx_model_field` VALUES ('62', '1', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"180\";s:6:\"height\";s:3:\"103\";s:4:\"size\";s:1:\"2\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('63', '10', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"180\";s:6:\"height\";s:3:\"122\";s:4:\"size\";s:1:\"2\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('64', '11', 'yulantu', '预览图', 'VARCHAR', '255', '', '1', '', '1', '', '', 'image', 'a:3:{s:5:\"width\";s:3:\"223\";s:6:\"height\";s:3:\"167\";s:4:\"size\";s:1:\"2\";}', '0', '0');

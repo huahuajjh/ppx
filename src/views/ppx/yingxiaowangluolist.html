@@ -45,37 +45,36 @@
                 <li>
                     <a href="/index.php?c=content&a=list&catid=27&dq={$t['id']}">{$t['name']}</a>
                 </li>
-                {if $t['arrchilds'] != null}
-                    {php $data1=linkagelist(2, $t['id']);}
-                    {loop $data1 $t2}
-                        <li>
-                            <a href="/index.php?c=content&a=list&catid=27&dq={$t2['id']}">&nbsp;&nbsp;&nbsp;&nbsp;|---{$t2['name']}</a>
-                        </li>
-                        {if $t2['arrchilds'] != null}
-                            {php $data2=linkagelist(2, $t2['id']);}
-                            {loop $data2 $t3}
-                                <li>
-                                    <a href="/index.php?c=content&a=list&catid=27&dq={$t3['id']}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---{$t3['name']}</a>
-                                </li>
-                            {/loop}
-                        {/if}
-                    {/loop}
-                {/if}
             {/loop}
         </ul>
     </div>
 </div>
 <hr style="border-color: #F9F9F9; margin: 0;">
 <ul class="mendian-list-data">
+    {php $datas=linkagelist(2);}
+    {php $selfData = $datas[$dq];}
     {if $dq != null}
-    {list catid=27 and suozaidiqu=$dq more=1 cache=36000 order=listorder_asc}
-    <li>
-        <a href="{$t['url']}">
-            <h2>{$t[title]}</h2>
-            <span>{$t['dizhi']}</span>
-        </a>
-    </li>
-    {/list}
+        {list catid=27 and suozaidiqu=$dq more=1 cache=36000 order=listorder_asc}
+            <li>
+                <a href="{$t['url']}">
+                    <h2>{$t[title]}</h2>
+                    <span>{$t['dizhi']}</span>
+                </a>
+            </li>
+        {/list}
+
+        {if $selfData && $selfData['arrchilds']}
+            {loop $selfData['arrchilds'] $dataId}
+                {list catid=27 and suozaidiqu=$dataId more=1 cache=36000 order=listorder_asc}
+                <li>
+                    <a href="{$t['url']}">
+                        <h2>{$t[title]}</h2>
+                        <span>{$t['dizhi']}</span>
+                    </a>
+                </li>
+                {/list}
+            {/loop}
+        {/if}
     {else}
     {list catid=27 more=1 cache=36000 order=listorder_asc}
     <li>

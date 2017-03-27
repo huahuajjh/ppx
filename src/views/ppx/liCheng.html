@@ -31,6 +31,19 @@
     .swiper-slide-active a{
         color: #a2824f;
     }
+    #left-year {
+        height: 200px;
+    }
+    #left-year .swiper-slide {
+        text-align: center;
+        color: #FFF;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #left-year .swiper-slide.swiper-slide-active {
+        text-decoration: underline;
+    }
 </style>
 <div class="container-title">
     <img src="{block(14)}" />
@@ -60,17 +73,21 @@
         </div>
     </div>
     <div class="ry-body-context">
-        <div class="ry-body-context-year">
+        <div class="ry-body-context-year" style="width: 85px;">
             <a href="javascript:perShow();" class="ry-body-context-year-up">
                 <img src="{SITE_THEME}image/jt-top.png" width="40">
             </a>
-            <ul id="pc_list">
+            <div class="swiper-container" id="left-year" style="width: 50px;">
+              <div class="swiper-wrapper">
                 {php $i = 0;}
                 {loop $timeArr $k=>$v}
-                <li onclick="swiperSelectIndex({$i})">{$k}</li>
+                <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                    <div style="padding: 10px 0;">{$k}</div>
+                </div>
                 {php $i = $i + 1;}
                 {/loop}
-            </ul>
+              </div>
+            </div>
             <a href="javascript:nextShow();" class="ry-body-context-year-down">
                 <img src="{SITE_THEME}image/jt-down.png" width="40">
             </a>
@@ -99,26 +116,27 @@
             swiperSelectIndex(swiper.activeIndex);
         }
     });
+
+    var leftYear = new Swiper('#left-year',{
+        mode:'vertical',
+        slidesPerView: 5,
+        centeredSlides: true,
+        onTouchEnd: function(swiper){
+            swiperSelectIndex(swiper.activeIndex);
+        }
+    });
     function swiperSelectIndex(index) {
         mySwiper.swipeTo(index, 500, false);
-        $("#pc_list > li").removeClass("active").eq(index).addClass("active");
+        leftYear.swipeTo(index, 500, false);
         $(".ry-body-context-lc-list").css("display", "none").eq(index).css("display", "block");
     }
     function nextShow() {
-        var index = $(".ry-body-context-lc-list:visible").index($(".ry-body-context-lc-list"));
-        if(index + 1 > $(".ry-body-context-lc-list").length - 1) {
-            swiperSelectIndex(0);
-        } else {
-            swiperSelectIndex(index + 1);
-        }
+        mySwiper.swipeNext();
+        leftYear.swipeNext();
     }
     function perShow() {
-        var index = $(".ry-body-context-lc-list:visible").index($(".ry-body-context-lc-list"));
-        if(index - 1 == 0) {
-            swiperSelectIndex($(".ry-body-context-lc-list").length - 1);
-        } else {
-            swiperSelectIndex(index - 1);
-        }
+        mySwiper.swipePrev(); 
+        leftYear.swipePrev(); 
     }
     swiperSelectIndex(0);
 </script>

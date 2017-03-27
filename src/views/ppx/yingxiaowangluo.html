@@ -29,32 +29,24 @@
     <img src="{$cats[25][image]}" alt="">
     <h2>品品香全国连锁店</h2>
     <div class="yxwl-down-list">
-        <p>选择省份或地区</p>
+        <p>查找门店</p>
         <span></span>
         <ul>
-            {php $data=linkagelist(2);}
-            {loop $data $t}
-                <li>
-                    <a href="/index.php?c=content&a=list&catid=27&dq={$t['id']}">{$t['name']}</a>
-                </li>
-                {if $t['arrchilds'] != null}
-                    {php $data1=linkagelist(2, $t['id']);}
-                    {loop $data1 $t2}
-                        <li>
-                            <a href="/index.php?c=content&a=list&catid=27&dq={$t2['id']}">&nbsp;&nbsp;&nbsp;&nbsp;|---{$t2['name']}</a>
-                        </li>
-                        {if $t2['arrchilds'] != null}
-                            {php $data2=linkagelist(2, $t2['id']);}
-                            {loop $data2 $t3}
-                                
-                                <li>
-                                    <a href="/index.php?c=content&a=list&catid=27&dq={$t3['id']}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---{$t3['name']}</a>
-                                </li>
-                            {/loop}
-                        {/if}
-                    {/loop}
-                {/if}
-            {/loop}
+            {list catid=27 more=1 cache=36000 order=listorder_asc}
+            {php $data=linkagedata(2, $t['suozaidiqu']);}
+            {php $dizhiName = $data['name'];}
+            {if $data['parentid'] != 0}
+                {php $data=linkagedata(2, $data['parentid']);}
+                {php $dizhiName = $data['name'].'，'.$dizhiName;}
+            {/if}
+            {if $data['parentid'] != 0}
+                {php $data=linkagedata(2, $data['parentid']);}
+                {php $dizhiName = $data['name'].'，'.$dizhiName;}
+            {/if}
+            <li>
+                <a href="{$t['url']}">{$dizhiName}</a>
+            </li>
+            {/list}
         </ul>
     </div>
     <a href="/index.php?c=content&a=list&catid=27" class="yxwl-all-dian">完整连锁店列表</a>

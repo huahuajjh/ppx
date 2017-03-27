@@ -20,6 +20,20 @@
     .swiper-slide-active a{
         color: #a2824f;
     }
+    #left-year {
+        height: 200px;
+    }
+    #left-year .swiper-slide {
+        text-align: center;
+        color: #FFF;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px 0;
+    }
+    #left-year .swiper-slide.swiper-slide-active {
+        text-decoration: underline;
+    }
 </style>
 <div class="container-title">
     <img src="<?php echo block(15); ?>" />
@@ -43,7 +57,7 @@
         </a>
         <div class="clear"></div>
     </div>
-    <div class="swiper-container ry-mini-year">
+    <div class="swiper-container ry-mini-year" id="year-top">
         <div class="swiper-wrapper">
             <?php $i = 0;  if (is_array($timeArr)) { $count=count($timeArr);foreach ($timeArr as $k=>$v) { ?>
             <div class="swiper-slide red-slide" onclick="swiperSelectIndex(<?php echo $i; ?>)" style="text-align: center;">
@@ -53,15 +67,17 @@
         </div>
     </div>
     <div class="ry-body-context">
-        <div class="ry-body-context-year">
+        <div class="ry-body-context-year" style="width: 85px;">
             <a href="javascript:perShow();" class="ry-body-context-year-up">
                 <img src="<?php echo SITE_THEME; ?>image/jt-top.png" width="40">
             </a>
-            <ul id="pc_list">
+            <div class="swiper-container" id="left-year" style="width: 50px;">
+              <div class="swiper-wrapper">
                 <?php $i = 0;  if (is_array($timeArr)) { $count=count($timeArr);foreach ($timeArr as $k=>$v) { ?>
-                <li onclick="swiperSelectIndex(<?php echo $i; ?>)"><?php echo $k; ?></li>
+                <div class="swiper-slide" onclick="swiperSelectIndex(<?php echo $i; ?>)"><?php echo $k; ?></div>
                 <?php $i = $i + 1;  } } ?>
-            </ul>
+              </div>
+            </div>
             <a href="javascript:nextShow();" class="ry-body-context-year-down">
                 <img src="<?php echo SITE_THEME; ?>image/jt-down.png" width="40">
             </a>
@@ -78,7 +94,7 @@
 </div>
 <script src="<?php echo SITE_THEME; ?>js/idangerous.swiper2.7.6.js"></script>
 <script>
-    var mySwiper = new Swiper('.swiper-container',{
+    var mySwiper = new Swiper('#year-top',{
         centeredSlides: true,
         slidesPerView: 4,
         watchActiveIndex: true,
@@ -86,9 +102,23 @@
             swiperSelectIndex(swiper.activeIndex);
         }
     })
+
+    var leftYear = new Swiper('#left-year',{
+        mode:'vertical',
+        width: 100,
+        cssWidthAndHeight: 'Width',
+        centeredSlides: true,
+        slidesPerView: 7,
+        watchActiveIndex: true,
+        autoResize: false,
+        onTouchEnd: function(swiper){
+            swiperSelectIndex(swiper.activeIndex);
+        }
+    });
+    
     function swiperSelectIndex(index) {
         mySwiper.swipeTo(index, 500, false);
-        $("#pc_list > li").removeClass("active").eq(index).addClass("active");
+        leftYear.swipeTo(index, 500, false);
         $(".ry-body-context-list").css("display", "none").eq(index).css("display", "block");
     }
     function nextShow() {

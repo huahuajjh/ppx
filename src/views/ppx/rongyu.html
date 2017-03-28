@@ -1,7 +1,7 @@
 {php $indexc = 0;}
 {template ./temp/head.html}
 {php $timeArr = array();}
-{list catid=$catid more=1 cache=36000 order=shijian_asc}
+{list catid=$catid more=1 cache=36000 order=shijian_desc}
 {php $timeYear = date("Y", $t['shijian']);}
 {php $timeMouth = date("m", $t['shijian']);}
 {php $timeDay = date("d", $t['shijian']);}
@@ -41,7 +41,7 @@
         font-size: 20px;
         cursor: pointer;
     }
-    #left-year .swiper-slide.swiper-slide-active {
+    #left-year .swiper-slide.active div{
         text-decoration: underline;
     }
 </style>
@@ -110,6 +110,7 @@
 </div>
 <script src="{SITE_THEME}js/idangerous.swiper2.7.6.js"></script>
 <script>
+
     var mySwiper = new Swiper('#year-top',{
         centeredSlides: true,
         slidesPerView: 4,
@@ -122,7 +123,6 @@
     var leftYear = new Swiper('#left-year',{
         mode:'vertical',
         slidesPerView: 5,
-        centeredSlides: true,
         onTouchEnd: function(swiper){
             swiperSelectIndex(swiper.activeIndex);
         }
@@ -132,14 +132,28 @@
         mySwiper.swipeTo(index, 500, false);
         leftYear.swipeTo(index, 500, false);
         $(".ry-body-context-list").css("display", "none").eq(index).css("display", "block");
+        $("#left-year .swiper-slide").removeClass("active").eq(index).addClass("active");
     }
+
+    var i = 0;
+
     function nextShow() {
-        mySwiper.swipeNext();
-        leftYear.swipeNext();
+        var slideCount = $("#left-year .swiper-slide").length;
+        if(i + 1 >= slideCount) {
+            i = 0;
+        } else {
+            i++;
+        }
+        swiperSelectIndex(i);
     }
     function perShow() {
-        mySwiper.swipePrev(); 
-        leftYear.swipePrev(); 
+        var slideCount = $("#left-year .swiper-slide").length;
+        if(i - 1 < 0) {
+            i = slideCount - 1;
+        } else {
+            i--;
+        }
+        swiperSelectIndex(i);
     }
     swiperSelectIndex(0);
 </script>

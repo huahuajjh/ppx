@@ -32,21 +32,34 @@
         <p>查找门店</p>
         <span></span>
         <ul>
+            {php $menDianList = array();}
             {list catid=27 more=1 cache=36000 order=listorder_asc}
             {php $data=linkagedata(2, $t['suozaidiqu']);}
             {php $dizhiName = $data['name'];}
+            {php $parentid = $t['suozaidiqu'];}
             {if $data['parentid'] != 0}
+                {php $parentid = $parentid.$data['parentid'];}
                 {php $data=linkagedata(2, $data['parentid']);}
                 {php $dizhiName = $data['name'].'，'.$dizhiName;}
             {/if}
             {if $data['parentid'] != 0}
+                {php $parentid = $parentid.$data['parentid'];}
                 {php $data=linkagedata(2, $data['parentid']);}
                 {php $dizhiName = $data['name'].'，'.$dizhiName;}
             {/if}
-            <li>
-                <a href="{$t['url']}">{$dizhiName}</a>
-            </li>
+            {if !$menDianList[$parentid]}
+                {php $menDianList[$parentid] = array();}
+            {/if}
+            {php array_push($menDianList[$parentid], array('url' => $t['url'], 'dizhiName' => $dizhiName));}
             {/list}
+            {php ksort($menDianList);}
+            {loop $menDianList $kA=>$vA}
+                {loop $vA $k=>$v}
+                <li>
+                    <a href="{$v['url']}">{$v['dizhiName']}</a>
+                </li>
+                {/loop}
+            {/loop}
         </ul>
     </div>
     <a href="/index.php?c=content&a=list&catid=27" class="yxwl-all-dian">完整连锁店列表</a>

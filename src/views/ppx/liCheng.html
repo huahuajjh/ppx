@@ -1,15 +1,34 @@
 {php $indexc = 0;}
 {template ./temp/head.html}
 {php $timeArr = array();}
-{list catid=4 more=1 cache=36000 order=shijian_asc}
-{php $timeYear = date("Y", $t['shijian']);}
-{php $timeMouth = date("m", $t['shijian']);}
-{php $timeDay = date("d", $t['shijian']);}
-{if !array_key_exists($timeYear, $timeArr)}
-{php $timeArr[$timeYear] = array();}
-{/if}
-{php array_push($timeArr[$timeYear], array('year'=>$timeYear, 'mouth'=> $timeMouth, 'day'=>$timeDay, 'description'=>$t['description'], 'thumb'=> $t['yulantu']));}
+{php $timeData = array();}
+{php $timeYearArr = array();}
+{php $timeIndex = 0;}
+{php $timeDataIndex = 0;}
+{list catid=4 more=1 cache=36000 order=shijian_desc}
+    {php $timeYear = date("Y", $t['shijian']);}
+    {php $timeMouth = date("m", $t['shijian']);}
+    {php $timeDay = date("d", $t['shijian']);}
+    {if !array_key_exists($timeYear, $timeArr)}
+        {php $timeArr[$timeYear] = array();}
+    {/if}
+    {php array_push($timeArr[$timeYear], array('year'=>$timeYear, 'mouth'=> $timeMouth, 'day'=>$timeDay, 'description'=>$t['description'], 'thumb'=> $t['yulantu']));}
 {/list}
+{loop $timeArr $k=>$v}
+    {if $timeIndex == 5}
+        {php $timeIndex = 0;}
+        {php $timeDataIndex = $timeDataIndex + 1;}
+    {/if}
+    {if !$timeYearArr[$timeDataIndex]}
+        {php $timeYearArr[$timeDataIndex] = array();}
+    {/if}
+    {if !$timeData[$timeDataIndex]}
+        {php $timeData[$timeDataIndex] = array();}
+    {/if}
+    {php array_push($timeYearArr[$timeDataIndex], $k);}
+    {php $timeData[$timeDataIndex] = array_merge($timeData[$timeDataIndex], $v);}
+    {php $timeIndex = $timeIndex + 1;}
+{/loop}
 <link rel="stylesheet" href="{SITE_THEME}css/idangerous.swiper2.7.6.css">
 <style>
     .swiper-container {
@@ -41,9 +60,6 @@
         font-size: 20px;
         cursor: pointer;
     }
-    #left-year .swiper-slide.swiper-slide-active {
-        text-decoration: underline;
-    }
 </style>
 <div class="container-title">
     <img src="{block(14)}" />
@@ -61,17 +77,6 @@
         <p>THE DEVELOPMENT</p>
         <div></div>
     </div>
-    <div class="swiper-container ry-mini-year">
-        <div class="swiper-wrapper">
-            {php $i = 0;}
-            {loop $timeArr $k=>$v}
-            <div class="swiper-slide red-slide" onclick="swiperSelectIndex({$i})" style="text-align: center;">
-                <a>{$k}</a>
-            </div>
-            {php $i = $i + 1;}
-            {/loop}
-        </div>
-    </div>
     <div class="ry-body-context">
         <div class="ry-body-context-year" style="width: 85px;">
             <a href="javascript:perShow();" class="ry-body-context-year-up">
@@ -80,11 +85,43 @@
             <div class="swiper-container" id="left-year" style="width: 50px;">
               <div class="swiper-wrapper">
                 {php $i = 0;}
-                {loop $timeArr $k=>$v}
-                <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
-                    <div style="padding: 10px 0;">{$k}</div>
-                </div>
-                {php $i = $i + 1;}
+                {loop $timeYearArr $kT=>$vT}
+                    {if $vT[0]}
+                    <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                        <div style="padding: 10px 0;">{$vT[0]}</div>
+                    </div>
+                    {else}
+                    <div class="swiper-slide"><div style="padding: 10px 0;"></div></div>
+                    {/if}
+                    {if $vT[1]}
+                    <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                        <div style="padding: 10px 0;">{$vT[1]}</div>
+                    </div>
+                    {else}
+                    <div class="swiper-slide"><div style="padding: 10px 0;"></div></div>
+                    {/if}
+                    {if $vT[2]}
+                    <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                        <div style="padding: 10px 0;">{$vT[2]}</div>
+                    </div>
+                    {else}
+                    <div class="swiper-slide"><div style="padding: 10px 0;"></div></div>
+                    {/if}
+                    {if $vT[3]}
+                    <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                        <div style="padding: 10px 0;">{$vT[3]}</div>
+                    </div>
+                    {else}
+                    <div class="swiper-slide"><div style="padding: 10px 0;"></div></div>
+                    {/if}
+                    {if $vT[4]}
+                    <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                        <div style="padding: 10px 0;">{$vT[4]}</div>
+                    </div>
+                    {else}
+                    <div class="swiper-slide"><div style="padding: 10px 0;"></div></div>
+                    {/if}
+                    {php $i = $i + 1;}
                 {/loop}
               </div>
             </div>
@@ -92,12 +129,12 @@
                 <img src="{SITE_THEME}image/jt-down.png" width="40">
             </a>
         </div>
-        {loop $timeArr $k=>$v}
+        {loop $timeData $k=>$v}
         <ul class="ry-body-context-lc-list">
             {loop $v $ck=>$cv}
             <li>
                 <img src="{$cv['thumb']}" alt="">
-                <p>{$cv['mouth']}/{$cv['day']}</p>
+                <p>{$cv['year']}/{$cv['mouth']}/{$cv['day']}</p>
                 <span>{$cv['description']}</span>
             </li>
             {/loop}
@@ -108,34 +145,22 @@
 </div>
 <script src="{SITE_THEME}js/idangerous.swiper2.7.6.js"></script>
 <script>
-    var mySwiper = new Swiper('.swiper-container',{
-        centeredSlides: true,
-        slidesPerView: 4,
-        watchActiveIndex: true,
-        onTouchEnd: function(swiper){
-            swiperSelectIndex(swiper.activeIndex);
-        }
-    });
-
+    var itemLength = {$timeDataIndex};
     var leftYear = new Swiper('#left-year',{
         mode:'vertical',
         slidesPerView: 5,
-        centeredSlides: true,
-        onTouchEnd: function(swiper){
-            swiperSelectIndex(swiper.activeIndex);
+        slidesPerGroup : 5,
+        onSlideChangeEnd: function(swiper){
+            swiperSelectIndex(swiper.activeIndex / 5);
         }
     });
     function swiperSelectIndex(index) {
-        mySwiper.swipeTo(index, 500, false);
-        leftYear.swipeTo(index, 500, false);
         $(".ry-body-context-lc-list").css("display", "none").eq(index).css("display", "block");
     }
     function nextShow() {
-        mySwiper.swipeNext();
         leftYear.swipeNext();
     }
     function perShow() {
-        mySwiper.swipePrev(); 
         leftYear.swipePrev(); 
     }
     swiperSelectIndex(0);

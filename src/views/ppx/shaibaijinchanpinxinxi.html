@@ -1,0 +1,121 @@
+{php $indexc = 2;}
+{template ./temp/head.html}
+<style type="text/css">
+    .zhanshisuotu {
+        padding: 30px;
+        width: 380px;
+        float: left;
+    }
+    .zhanshisuotu > img {
+        display: block;
+        width: 379px;
+        height: 320px;
+    }
+    .zhanshisuotu > ul {
+        margin-top: 10px;
+    }
+    .zhanshisuotu > ul li {
+        float: left;
+        width: 25%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .zhanshisuotu > ul li img{
+        width: 85px;
+        height: 71px;
+        cursor: pointer;
+    }
+
+    .zhanshisuoxinxi {
+        float: left;
+        padding: 30px;
+        width: 470px;
+    }
+
+    .zhanshisuoxinxi h3{
+        margin: 0;
+        color: #9A896D;
+        font-size: 28px;
+        padding-top: 40px;
+    }
+    .zhanshisuoxinxi ul{
+        margin: 30px 0;
+    }
+    .zhanshisuoxinxi ul li{
+        font-size: 18px;
+        border-bottom: 1px dashed #ccc;
+        padding: 10px 2px;
+    }
+    .zhanshisuoxinxi .tianmao{
+        background-image: url("{SITE_THEME}/image/tm-hone.png");
+        width: 197px;
+        height: 45px;
+        display: block;
+        float: left;
+    }
+    .zhanshisuoxinxi .jingdong{
+        background-image: url("{SITE_THEME}/image/jd-hong.png");
+        width: 197px;
+        height: 45px;
+        display: block;
+        float: right;
+    }
+</style>
+<div style="background-color: #A2824F">
+    <div class="container-body" style="height: 90px;position:relative;">
+        <div style="width: 232px;height: 22px; background-image: url('{SITE_THEME}/image/chanpinwenzi.png'); position: absolute; top: 30px;"></div>
+        <div style="margin-left: 400px; height: 100%;">
+            <a href="/index.php?c=content&a=list&catid=19" style="height: 90px; display: table-cell; vertical-align: middle; padding: 0 40px;">
+                <img src="{SITE_THEME}/image/pinpinxiangchanpin.png" alt="">
+            </a>
+            <a href="/index.php?c=content&a=list&catid=14" style="height: 90px; display: table-cell; vertical-align: middle; padding: 0 40px; background: #6E5541;">
+                <img src="{SITE_THEME}/image/shaibaijinchanpin.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<div style="text-align: center;">
+    {php $data=getCatNav(13);}
+    {loop $data $t}
+    <a href="{$t['url']}" style="border: 1px solid #a2824f;padding: 5px 10px;display: inline-block;margin: 20px 10px;">{$t['meta_title']}</a>
+    {/loop}
+</div>
+<div style="border: 2px solid #5D5A55; width: 970px; margin: 0 auto; margin-bottom: 30px;">
+    {php $images=string2array($tupianji);}
+    <div class="zhanshisuotu">
+        {loop $images["file"] $img} 
+        <img src="{$img}" alt="" style="display: none;">
+        {/loop}
+        <ul>
+            {loop $images["file"] $img} 
+            <li><img src="{$img}" alt=""></li>
+            {/loop}
+        </ul>
+    </div>
+    <div class="zhanshisuoxinxi">
+        <h3>{$title}</h3>
+        <ul>
+            <li>年份：{$nianfen}</li>
+            <li>等级：{$dengji}</li>
+            <li>产地：{$chandi}</li>
+            <li>净含量：{$jinghanliang}</li>
+        </ul>
+        <a href="{$tianmaodizhi}" class="tianmao"></a>
+        <a href="{$jingdongdizhi}" class="jingdong"></a>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+<div style="width: 970px; margin: 30px auto;">
+    {$content}
+</div>
+
+<script>
+    $(".zhanshisuotu > ul > li").on("mouseover", function() {
+        var index = $(this).index(".zhanshisuotu > ul > li");
+        var img = $(".zhanshisuotu > img").eq(index).css("display", "block");
+        $(".zhanshisuotu > img").not(img).css("display", "none");
+    });
+    $(".zhanshisuotu > img").eq(0).css("display", "block");
+</script>
+{template ./temp/footer.html}

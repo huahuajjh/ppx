@@ -27,8 +27,75 @@
         clear: both;
         display: block;
     }
+
+    .ban {
+        width: 1042px;
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+        margin: 40px auto 0 auto;
+    }
+    .ban2 {
+        width: 1042px;
+        height: 446px;
+        position: relative;
+        overflow: hidden;
+    }
+    .ban2 ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .ban2 ul li {
+        width: 1042px;
+        height: 446px;
+    }
+    .min_pic {
+        padding-top: 10px;
+        width: 1042px;
+    }
+    .next_btn1 {
+        width: 16px;
+        text-align: center;
+        height: 18px;
+        margin-top: 40px;
+        cursor: pointer;
+        float: right;
+    }
+    .prev_btn1 {
+        width: 16px;
+        text-align: center;
+        height: 18px;
+        margin-top: 40px;
+        margin-right: 20px;
+        cursor: pointer;
+        float: left;
+    }
+    .num {
+        height: 133px;
+        overflow: hidden;
+        width: 920px;
+        position: relative;
+        margin: 0 auto;
+    }
+    .num ul {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .num ul li {
+        width: 210px;
+        height: 123px;
+        margin-right: 20px;
+        padding: 1px;
+    }
+    .num ul li.on {
+        border: 1px solid red;
+        padding: 0;
+    }
 </style>
 <link rel="stylesheet" href="{SITE_THEME}css/idangerous.swiper2.7.6.css">
+<script type="text/javascript" src="{SITE_THEME}js/pic_tab.js"></script>
 <div class="pinpai-top-bg">
     <img src="{block(60)}" alt="">
 </div>
@@ -38,33 +105,61 @@
 <div class="pinpai-top-bg">
     <img src="{block(62)}" alt="">
 </div>
+
 <div style="background: #FDFDFD">
     <div class="container-body" style="padding: 20px 0;">
         <h2 style="color: #9F7E46;text-align: center;font-size: 40px;margin: 0;padding: 30px;">往期回顾</h2>
-        <div class="youxue-image">
-            <a class="arrow-left"></a>
-            <a class="arrow-right"></a>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+        <div class="ban" id="demo1">
+            <a name="zsh"></a>
+            <div class="ban2" id="ban_pic1">	
+                <ul>
                     {list catid=38 more=1 cache=36000 order=listorder_asc}
-                    <div class="swiper-slide">
-                        <img src="{$t['suofangtu']}">
-                    </div>
+                    <li>
+                        <a href="javascript:;"><img src="{$t['suofangtu']}" width="1042" height="446" ></a>
+                    </li>
                     {/list}
+                </ul>
+            </div>
+            <div class="min_pic">
+                <div class="next_btn1" id="next_btn1"><img src="{SITE_THEME}image/feel4.png" width="9" height="18"  alt=""></div>
+                <div class="prev_btn1" id="prev_btn1"><img src="{SITE_THEME}image/feel3.png" width="9" height="18"  alt=""></div>
+                <div class="num clearfix" id="ban_num1">
+                    <ul>
+                        {list catid=38 more=1 cache=36000 order=listorder_asc}
+                        <li><a href="javascript:;"><img src="{$t['suofangtu']}" width="210" height="123"></a></li>
+                        {/list}
+                    </ul>
                 </div>
             </div>
         </div>
-        <ul class="youxue-image-list">
-            {php $i = 0;}
-            {list catid=38 more=1 cache=36000 order=listorder_asc}
-            <li onclick="goIndex({$i})">
-                <img src="{$t['suofangtu']}">
-            </li>
-            {php $i++;}
-            {/list}
-        </ul>
     </div>
 </div>
+<script type="text/javascript">
+jq('#demo1').banqh({
+	box:"#demo1",//总框架
+	pic:"#ban_pic1",//大图框架
+	pnum:"#ban_num1",//小图框架
+	prev_btn:"#prev_btn1",//小图左箭头
+	next_btn:"#next_btn1",//小图右箭头
+	pop_prev:"#prev2",//弹出框左箭头
+	pop_next:"#next2",//弹出框右箭头
+	prev:"#prev1",//大图左箭头
+	next:"#next1",//大图右箭头
+	pop_div:"#demo2",//弹出框框架
+	pop_pic:"#ban_pic2",//弹出框图片框架
+	pop_xx:".pop_up_xx",//关闭弹出框按钮
+	mhc:".mhc",//朦灰层
+	autoplay:true,//是否自动播放
+	interTime:5000,//图片自动切换间隔
+	delayTime:400,//切换一张图片时间
+	pop_delayTime:400,//弹出框切换一张图片时间
+	order:0,//当前显示的图片（从0开始）
+	picdire:true,//大图滚动方向（true为水平方向滚动）
+	mindire:true,//小图滚动方向（true为水平方向滚动）
+	min_picnum:4,//小图显示数量
+	pop_up:true//大图是否有弹出框
+})
+</script>
 <script src="{SITE_THEME}js/idangerous.swiper2.7.6.js"></script>
 <script>
     var mySwiper = new Swiper('.swiper-container',{

@@ -246,10 +246,10 @@ p, ul, ol {
 }
 
 .banner-body .banner-menu .banner-menu-body li a{
-    width: 130px;
     font-size: 14px;
     display: block;
     color: #fff;
+    padding: 0 30px;
 }
 
 .banner-body .banner-menu .banner-menu-body li a.active, .banner-body .banner-menu .banner-menu-body li a:hover{
@@ -261,7 +261,6 @@ p, ul, ol {
     height: 25px;
     position: relative;
     top: -3px;
-    padding-left: 10px;
 }
 
 .banner-body .banner-menu .banner-menu-body li.fg a{
@@ -851,6 +850,8 @@ hr.hh {
     width: 100%;
     height: 600px;
     display: block;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .pinpai-top-menu-logo {
@@ -1222,7 +1223,7 @@ hr.hh {
     font-size: 23px;
 }
 
-.chanpin-list-data li span{
+.chanpin-list-data li span, .chanpin-list-data li span a{
     float: left;
     width: 50%;
     color: #fff;

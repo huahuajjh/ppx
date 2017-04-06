@@ -12,7 +12,8 @@
     }
     </style>
     <div class="pinpai-top-bg">
-        <img class="bgpinpai-top-menu-bg" src="{$cats[18][image]}" alt="">
+        <!--<img class="bgpinpai-top-menu-bg" src="" alt="">-->
+        <div class="bgpinpai-top-menu-bg" style="background-image: url('{$cats[18][image]}');"></div>
     </div>
     <div class="pinpai-hr" style="border-top: 2px solid #D5D5CD;"></div>
     <div style="background-color: #FEFEFE">
@@ -36,13 +37,11 @@
             <li>
                 <img src="{$t['yulantu']}" alt="">
                 <div>
-                    <a href="{$t['url']}">
-                        <h3>{$t['title']}</h3>
-                        <span>年份：{$t['nianfen']}</span>
-                        <span>等级：{$t['dengji']}</span>
-                        <span>产地：{$t['chandi']}</span>
-                        <span>价格：{$t['jiage']}</span>
-                    </a>
+                    <h3>{$t['title']}</h3>
+                    <span>年份：{$t['nianfen']}</span>
+                    <span>等级：{$t['dengji']}</span>
+                    <span>产地：{$t['chandi']}</span>
+                    <span><a href="{$t['url']}">了解更多</a></span>
                     <hr>
                     <a href="{$t['tianmaodizhi']}" class="tianmao"></a>
                     <a href="{$t['jingdongdizhi']}" class="jingdong"></a>

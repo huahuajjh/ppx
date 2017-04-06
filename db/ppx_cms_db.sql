@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-29 13:43:52
+Date: 2017-04-06 10:41:37
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -252,9 +252,9 @@ INSERT INTO `ppx_content_1` VALUES ('26', '7', '11', '金奖', '', '', '', '/ind
 INSERT INTO `ppx_content_1` VALUES ('13', '7', '11', '荣誉1', 'uploadfiles/image/201702/16.png', '', '', '/index.php?c=content&a=show&id=13', '0', '1', '0', '1', '0', 'admin', '1488006611', '1490243229');
 INSERT INTO `ppx_content_1` VALUES ('30', '27', '13', '33', '', '', '', '/index.php?c=content&a=show&id=30', '0', '1', '0', '1', '0', 'admin', '1490595224', '1490596017');
 INSERT INTO `ppx_content_1` VALUES ('31', '12', '1', 'v分v', '', '', 'vvv', '/index.php?c=content&a=show&id=31', '0', '1', '0', '1', '0', 'admin', '1490755512', '1490755512');
-INSERT INTO `ppx_content_1` VALUES ('33', '14', '12', 'v分v分', '', '', '的v的v', '/index.php?c=content&a=show&id=33', '0', '1', '0', '1', '0', 'admin', '1490756182', '1490764835');
-INSERT INTO `ppx_content_1` VALUES ('18', '14', '12', '晒白金礼遇版0731', 'uploadfiles/image/201702/27.jpg', '', '内容内容的v的v', '/index.php?c=content&a=show&id=18', '0', '1', '0', '1', '0', 'admin', '1488195776', '1490755692');
-INSERT INTO `ppx_content_1` VALUES ('19', '19', '12', '晒白金礼遇版0733', 'uploadfiles/image/201702/34.jpg', '', '', '/index.php?c=content&a=show&id=19', '0', '1', '0', '1', '0', 'admin', '1488196893', '1490243367');
+INSERT INTO `ppx_content_1` VALUES ('33', '14', '12', 'v分v分', '', '', '的v的v', '/index.php?c=content&a=show&id=33', '0', '1', '0', '1', '0', 'admin', '1490756182', '1491358102');
+INSERT INTO `ppx_content_1` VALUES ('18', '14', '12', '晒白金礼遇版0731', 'uploadfiles/image/201702/27.jpg', '', '内容内容的v的v', '/index.php?c=content&a=show&id=18', '0', '1', '0', '1', '0', 'admin', '1488195776', '1491358080');
+INSERT INTO `ppx_content_1` VALUES ('19', '19', '12', '晒白金礼遇版0733', 'uploadfiles/image/201702/34.jpg', '', 'gtrrtthrthbgf', '/index.php?c=content&a=show&id=19', '0', '1', '0', '1', '0', 'admin', '1488196893', '1491358199');
 INSERT INTO `ppx_content_1` VALUES ('20', '26', '9', '门店轮播1', '', '', '', '/index.php?c=content&a=show&id=20', '0', '1', '0', '1', '0', 'admin', '1488210935', '1488210935');
 INSERT INTO `ppx_content_1` VALUES ('21', '27', '13', '北京三区形象店', '', '', '', '/index.php?c=content&a=show&id=21', '0', '1', '0', '1', '0', 'admin', '1488213080', '1490595085');
 INSERT INTO `ppx_content_1` VALUES ('23', '31', '9', '三大标准第一张轮播图', '', '', '', '/index.php?c=content&a=show&id=23', '0', '1', '0', '1', '0', 'admin', '1488269397', '1488269397');
@@ -305,8 +305,8 @@ CREATE TABLE `ppx_content_1_chanpin` (
 -- ----------------------------
 -- Records of ppx_content_1_chanpin
 -- ----------------------------
-INSERT INTO `ppx_content_1_chanpin` VALUES ('18', '14', '&lt;p&gt;内容内容的v的v&lt;/p&gt;', '2007', '高级', '福鼎', '200', 'uploadfiles/image/201703/35.jpg', '', 'a:2:{s:4:\"file\";a:3:{i:0;s:31:\"uploadfiles/image/201703/90.jpg\";i:1;s:31:\"uploadfiles/image/201703/91.jpg\";i:2;s:31:\"uploadfiles/image/201703/92.jpg\";}s:3:\"alt\";a:3:{i:0;s:8:\"1-大图\";i:1;s:8:\"1-大图\";i:2;s:8:\"1-大图\";}}', null, null);
-INSERT INTO `ppx_content_1_chanpin` VALUES ('19', '19', '', '2017', '高级', '或许', '300', 'uploadfiles/image/201703/37.jpg', null, null, null, null);
+INSERT INTO `ppx_content_1_chanpin` VALUES ('18', '14', '&lt;p&gt;内容内容的v的v&lt;/p&gt;', '2007', '高级', '福鼎', '200', 'uploadfiles/image/201703/35.jpg', '', 'a:2:{s:4:\"file\";a:3:{i:0;s:31:\"uploadfiles/image/201703/90.jpg\";i:1;s:31:\"uploadfiles/image/201703/91.jpg\";i:2;s:31:\"uploadfiles/image/201703/92.jpg\";}s:3:\"alt\";a:3:{i:0;s:8:\"1-大图\";i:1;s:8:\"1-大图\";i:2;s:8:\"1-大图\";}}', '', '');
+INSERT INTO `ppx_content_1_chanpin` VALUES ('19', '19', '&lt;p&gt;gtrrtthrthbgf&lt;/p&gt;', '2017', '高级', '或许', '300', 'uploadfiles/image/201703/37.jpg', '', null, '', '');
 INSERT INTO `ppx_content_1_chanpin` VALUES ('33', '14', '&lt;p&gt;的v的v&lt;/p&gt;', '2010', '11', '111', '11', 'uploadfiles/image/201703/95.jpg', '30', 'a:2:{s:4:\"file\";a:3:{i:0;s:31:\"uploadfiles/image/201703/97.jpg\";i:1;s:31:\"uploadfiles/image/201703/98.jpg\";i:2;s:32:\"uploadfiles/image/201703/100.jpg\";}s:3:\"alt\";a:3:{i:0;s:8:\"1-大图\";i:1;s:8:\"1-大图\";i:2;s:8:\"new-test\";}}', 'www.tianmao.com', 'www.jd.com');
 
 -- ----------------------------
@@ -934,7 +934,7 @@ INSERT INTO `ppx_model_field` VALUES ('50', '12', 'content', '内容', '', '', '
 INSERT INTO `ppx_model_field` VALUES ('51', '12', 'nianfen', '年份', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '2', '0');
 INSERT INTO `ppx_model_field` VALUES ('52', '12', 'dengji', '等级', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '3', '0');
 INSERT INTO `ppx_model_field` VALUES ('53', '12', 'chandi', '产地', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '4', '0');
-INSERT INTO `ppx_model_field` VALUES ('54', '12', 'jiage', '价格', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '5', '0');
+INSERT INTO `ppx_model_field` VALUES ('54', '12', 'jiage', '价格', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '5', '1');
 INSERT INTO `ppx_model_field` VALUES ('80', '12', 'jingdongdizhi', '京东地址', 'VARCHAR', '500', '', '1', '', '0', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '1', '0');
 INSERT INTO `ppx_model_field` VALUES ('57', '13', 'content', '内容', '', '', '', '0', '', '0', '', '', 'editor', 'a:4:{s:5:\"width\";s:3:\"100\";s:6:\"height\";s:3:\"300\";s:4:\"type\";s:1:\"1\";s:7:\"default\";s:0:\"\";}', '1', '1');
 INSERT INTO `ppx_model_field` VALUES ('58', '13', 'suozaidiqu', '所在地区', 'VARCHAR', '500', '', '1', '', '1', '', '', 'linkage', 'a:3:{s:2:\"id\";s:1:\"2\";s:5:\"level\";s:1:\"3\";s:7:\"default\";s:0:\"\";}', '2', '0');
@@ -956,7 +956,7 @@ INSERT INTO `ppx_model_field` VALUES ('73', '16', 'shouji', '手机', 'VARCHAR',
 INSERT INTO `ppx_model_field` VALUES ('74', '16', 'xueli', '学历', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('75', '16', 'yingpinzhiwei', '应聘职位', 'VARCHAR', '255', '', '1', '', '1', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
 INSERT INTO `ppx_model_field` VALUES ('76', '16', 'liuyan', '留言', 'VARCHAR', '1000', '', '1', '', '1', '', '', 'textarea', 'a:3:{s:5:\"width\";s:3:\"400\";s:6:\"height\";s:2:\"90\";s:7:\"default\";s:0:\"\";}', '0', '0');
-INSERT INTO `ppx_model_field` VALUES ('77', '12', 'jinghanliang', '净含量', 'VARCHAR', '255', '', '1', '', '0', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '0');
+INSERT INTO `ppx_model_field` VALUES ('77', '12', 'jinghanliang', '净含量', 'VARCHAR', '255', '', '1', '', '0', '', '', 'input', 'a:2:{s:4:\"size\";s:3:\"400\";s:7:\"default\";s:0:\"\";}', '0', '1');
 INSERT INTO `ppx_model_field` VALUES ('78', '12', 'tupianji', '图片集', '', '', '', '1', '图片大小统一为：410*285', '0', '', '', 'files', 'a:2:{s:4:\"type\";s:20:\"bmp,jpg,jpeg,png,gif\";s:4:\"size\";s:1:\"2\";}', '0', '0');
 
 -- ----------------------------
@@ -1173,4 +1173,4 @@ CREATE TABLE `ppx_user` (
 -- ----------------------------
 -- Records of ppx_user
 -- ----------------------------
-INSERT INTO `ppx_user` VALUES ('1', null, 'admin', '42253096b6160c65e3ebaf72d7a788a3', '5b4fe9777d', '1', '', '1490432670', '', '1490753812', null, '网站创始人', null);
+INSERT INTO `ppx_user` VALUES ('1', '0', 'admin', '42253096b6160c65e3ebaf72d7a788a3', '5b4fe9777d', '1', '', '1490772680', '127.0.0.1', '1491357984', 'admin@admin.com', '网站创始人', 'a:0:{}');

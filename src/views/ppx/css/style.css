@@ -654,6 +654,7 @@ p, ul, ol {
     width: 180px;
     border: 1px solid #F4F4F4;
     margin-left: 150px;
+    height: 100px;
 }
 
 .ry-body-context-lc-list li p{

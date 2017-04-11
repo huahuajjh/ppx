@@ -2,7 +2,7 @@
 {template ./temp/head.html}
 {php $timeArr = array();}
 {php $year = $_GET['year'];}
-{list catid=12 more=1 cache=36000 order=updatetime_asc}
+{list catid=12 more=1 cache=36000 order=updatetime_desc}
     {php $timeYear = date("Y", $t['updatetime']);}
     {if !array_key_exists($timeYear, $timeArr)}
         {php $timeArr[$timeYear] = array();}
@@ -12,6 +12,7 @@
     {/if}
     {php array_push($timeArr[$timeYear], $t['id']);}
 {/list}
+<link rel="stylesheet" href="{SITE_THEME}css/idangerous.swiper2.7.6.css">
 <style type="text/css">
     .pagination {
         text-align: center;
@@ -26,6 +27,38 @@
     .pagination ul li .current{
         color: #ccc;
     }
+    .swiper-container {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+    }
+    .swiper-container a{
+        display: block;
+        font-size: 23px;
+        color: #000;
+    }
+    .swiper-container a:hover{
+        color: #a2824f;
+    }
+    .swiper-slide-active a{
+        color: #a2824f;
+    }
+    .swiper-container a.active {
+        text-decoration: underline;
+    }
+    #left-year {
+        height: 300px;
+    }
+    #left-year .swiper-slide {
+        text-align: center;
+        color: #FFF;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #left-year .swiper-slide.active div{
+        text-decoration: underline;
+    }
 </style>
 <div class="container-title">
     <a href="{$meta_description}"><img src="{$cats[12][image]}" /></a>
@@ -38,15 +71,21 @@
         <div></div>
     </div>
     <div class="ry-body-context">
-        <div class="ry-body-context-year">
+        <div class="ry-body-context-year" style="width: 85px;">
             <a href="javascript:perShowOrnextShow(true);" class="ry-body-context-year-up">
                 <img src="{SITE_THEME}image/jt-top.png" width="40">
             </a>
-            <ul id="pc_list">
+            <div class="swiper-container" id="left-year" style="width: 85px;">
+              <div class="swiper-wrapper">
+                {php $i = 0;}
                 {loop $timeArr $k=>$v}
-                <li {if $k == $year}class="active"{/if}><a href="/index.php?c=content&a=list&catid=12&year={$k}" style="color: #fff;">{$k}</a></li>
+                <div class="swiper-slide" onclick="swiperSelectIndex({$i})">
+                    <div style="padding: 10px 0;"><a {if $k == $year}class="active"{/if} href="/index.php?c=content&a=list&catid=12&year={$k}" style="color: #fff;">{$k}</a></div>
+                </div>
+                {php $i = $i + 1;}
                 {/loop}
-            </ul>
+              </div>
+            </div>
             <a href="javascript:perShowOrnextShow(false);" class="ry-body-context-year-down">
                 <img src="{SITE_THEME}image/jt-down.png" width="40">
             </a>
@@ -56,10 +95,10 @@
             {list catid=12 and INid=$yearArr more=1 page=$page pagesize=10 order=updatetime}
             <li>
                 <a href="{$t[url]}">
-                    <h3>{$t['title']}</h3>
+                    <h3 style="white-space:nowrap; ">{$t['title']}</h3>
                     <img src="{$t['yulantu']}" alt="">
                     <p>{date("m", $t['updatetime'])}/{date("d", $t['updatetime'])}</p>
-                    <span>{$t['description']}</span>
+                    <span style="top: 44px;">{$t['description']}</span>
                 </a>
             </li>
             {/list}
@@ -68,16 +107,23 @@
         {$pagelist}
     </div>
 </div>
+<script src="{SITE_THEME}js/idangerous.swiper2.7.6.js"></script>
 <script type="text/javascript">
+
+    var leftYear = new Swiper('#left-year',{
+        mode:'vertical',
+        slidesPerView: 7
+    });
+
     function perShowOrnextShow(isNext) {
-        var index = $("#pc_list li").index($("#pc_list li.active"));
+        var index = $("#left-year a").index($("#left-year a.active"));
         if(isNext) {
             index = index -1;
-            var a = $("#pc_list li a").eq(index);
+            var a = $("#left-year a").eq(index);
             if(a.length > 0) location.href = a.attr("href");
         } else {
             index = index + 1;
-            var a = $("#pc_list li a").eq(index);
+            var a = $("#left-year a").eq(index);
             if(a.length > 0) location.href = a.attr("href");
         }
     }

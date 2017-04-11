@@ -1,5 +1,44 @@
 {php $indexc = 2;}
 {template ./temp/head.html}
+<style type="text/css">
+.chanpin-list-data li h3{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 13px;
+    font-size: 23px;
+}
+
+.chanpin-list-data li span, .chanpin-list-data li span a{
+    float: left;
+    width: 50%;
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.chanpin-list-data li hr {
+    padding-top: 18px;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    display: block;
+    clear: both;
+}
+
+.chanpin-list-data li a.tianmao {
+    background-image: url("{SITE_THEME}image/Image 1.png");
+    height: 28px;
+    width: 117px;
+    float: left;
+}
+
+.chanpin-list-data li a.jingdong {
+    background-image: url("{SITE_THEME}image/Image 2.png");
+    height: 28px;
+    width: 117px;
+    float: right;
+}
+</style>
     <div class="pinpai-top-bg">
         <img class="bgpinpai-top-menu-bg" src="{$cats[13][image]}" alt="">
     </div>
@@ -23,7 +62,7 @@
         <ul class="chanpin-list-data">
             {list catid=$catid more=1 cache=36000}
             <li>
-                <img src="{$t['yulantu']}" alt="">
+                <a href="{$t['url']}"><img src="{$t['yulantu']}" alt=""></a>
                 <div>
                     <h3>{$t['title']}</h3>
                     <span>年份：{$t['nianfen']}</span>

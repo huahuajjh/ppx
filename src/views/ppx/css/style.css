@@ -576,7 +576,7 @@ p, ul, ol {
     margin: 0 auto;
     position: relative;
     min-height: 500px;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 60px 0;
 }
 .ry-body .ry-body-context .ry-body-context-year {
@@ -600,10 +600,11 @@ p, ul, ol {
 }
 
 .ry-body-context-list li{
-    width: 25%;
+    width: 300px;
     float: left;
     box-sizing: border-box;
     border: 1px solid #fff;
+    margin: 10px;
 }
 
 .ry-body-context-list li img{
@@ -671,7 +672,7 @@ p, ul, ol {
     top: 0;
     left: 0;
     padding-left: 380px;
-    padding-top: 40px;
+    padding-top: 0;
     display: block;
     font-size: 18px;
     color: #636363;
@@ -1034,20 +1035,20 @@ hr.hh {
 .new-body-context .close-btn, .next-new-btn, .per-new-btn {
     background: url("../image/new-jt.png");
     display: block;
-    width: 148px;
-    height: 135px;
+    width: 74px;
+    height: 66px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 130px;
 }
 
 .next-new-btn {
-    top: 150px;
+    top: 70px;
     background-position-y: 279px;
 }
 
 .per-new-btn {
-    top: 300px;
+    top: 140px;
     background-position-y: 135px;
 }
 
@@ -1205,9 +1206,10 @@ hr.hh {
 }
 
 .chanpin-list-data li div{
-    background: #A2824F;
+    /*background: #A2824F;*/
     box-sizing: border-box;
     padding: 30px;
+    color: #A2824F;
 }
 
 .chanpin-list-data li div:after{
@@ -1218,7 +1220,7 @@ hr.hh {
 
 .chanpin-list-data li h3{
     margin: 0;
-    color: #fff;
+    color: #A2824F;
     text-align: center;
     margin-bottom: 13px;
     font-size: 23px;
@@ -1227,7 +1229,7 @@ hr.hh {
 .chanpin-list-data li span, .chanpin-list-data li span a{
     float: left;
     width: 50%;
-    color: #fff;
+    color: #A2824F;
     font-size: 14px;
     padding-bottom: 5px;
 }
@@ -1235,20 +1237,20 @@ hr.hh {
 .chanpin-list-data li hr {
     padding-top: 18px;
     border: 0;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #A2824F;
     display: block;
     clear: both;
 }
 
 .chanpin-list-data li a.tianmao {
-    background-image: url("../image/Image 1.png");
+    background-image: url("../image/Image-1.png");
     height: 28px;
     width: 117px;
     float: left;
 }
 
 .chanpin-list-data li a.jingdong {
-    background-image: url("../image/Image 2.png");
+    background-image: url("../image/Image-2.png");
     height: 28px;
     width: 117px;
     float: right;

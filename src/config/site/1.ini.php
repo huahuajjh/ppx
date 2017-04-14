@@ -28,6 +28,6 @@ return array(
 	'SITE_MOBILE'             => '',  //移动设备访问网站开关，打开之后需要设计移动端模板（默认mobile或者mobile_站点id）
 	'SITE_MURL'               => '',  //域名格式为：m.finecms.net，不要加http://
 	'SITE_ICP'                => 'ICP备案序号',  //ICP备案序号
-	'SITE_JS'                 => 'a:1:{s:5:"value";s:71:"a:1:{s:5:"value";s:45:"a:1:{s:5:&quot;value&quot;;s:0:&quot;&quot;;}";}";}',  //第三方统计代码
+	'SITE_JS'                 => 'a:1:{s:5:"value";s:97:"a:1:{s:5:"value";s:71:"a:1:{s:5:"value";s:45:"a:1:{s:5:&quot;value&quot;;s:0:&quot;&quot;;}";}";}";}',  //第三方统计代码
 
 );

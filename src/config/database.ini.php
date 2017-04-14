@@ -6,7 +6,7 @@ if (!defined('IN_FINECMS')) exit();
  */
 return array(
 
-	'host'     => '127.0.0.1', 
+	'host'     => 'localhost', 
 	'username' => 'root', 
 	'password' => '123456', 
 	'dbname'   => 'ppx_cms_db', 

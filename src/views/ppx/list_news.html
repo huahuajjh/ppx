@@ -2,7 +2,7 @@
 {template ./temp/head.html}
 {php $timeArr = array();}
 {php $year = $_GET['year'];}
-{list catid=12 more=1 cache=36000 order=updatetime_desc}
+{sql "select * from ppx_content_1 where catid=12 order by updatetime desc"}
     {php $timeYear = date("Y", $t['updatetime']);}
     {if !array_key_exists($timeYear, $timeArr)}
         {php $timeArr[$timeYear] = array();}
@@ -11,7 +11,7 @@
         {/if}
     {/if}
     {php array_push($timeArr[$timeYear], $t['id']);}
-{/list}
+{/sql}
 <link rel="stylesheet" href="{SITE_THEME}css/idangerous.swiper2.7.6.css">
 <style type="text/css">
     .pagination {
@@ -91,7 +91,7 @@
             </a>
         </div>
         <ul class="ry-body-context-lc-list">
-            {php $yearArr = join(',', $timeArr[$year]);}
+            {php $yearArr = join(',', array_filter($timeArr[$year]));}
             {list catid=12 and INid=$yearArr more=1 page=$page pagesize=10 order=updatetime}
             <li>
                 <a href="{$t[url]}">

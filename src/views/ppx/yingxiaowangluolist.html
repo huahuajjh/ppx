@@ -68,21 +68,6 @@
                 {php $isSetTitle = false;}
                 {php $dzData=linkagedata(2, $dataId);}
                 {list catid=27 and suozaidiqu=$dataId more=1 cache=36000 order=listorder_asc}
-                {if !$isSetTitle}
-                <!--<li style="
-                    margin: 0;
-                    display: block;
-                    float: none;
-                    clear: both;
-                    width: 100%;
-                    height: initial;
-                    padding-top: 30px;
-                "><h3 style="
-                    margin: 0;
-                    color: #B59046;
-                    font-size: 30px;
-                ">{$dzData['name']}</h3></li>-->
-                {/if}
                 <li>
                     <a href="{$t['url']}">
                         <h2>{$t[title]}</h2>
@@ -94,7 +79,70 @@
             {/loop}
         {/if}
     {else}
-    {list catid=27 more=1 cache=36000 order=listorder_asc}
+    {php $links = linkagelist(2);}
+    {loop $links $l}
+        {php $linkIds = $l['arrchilds'];}
+        {if !$linkIds}
+            {php $linkIds = array($l['id']);}
+        {/if}
+        
+        {php $isT = false;}
+
+        {loop $linkIds $dataId}
+            {php $isSetTitle = false;}
+            {php $dzData=linkagedata(2, $dataId);}
+            {php $dzDatas=array();}
+            {list catid=27 and suozaidiqu=$dataId more=1 cache=36000 order=listorder_asc}
+                {php array_push($dzDatas, $t);}
+                {php $isSetTitle = true;}
+            {/list}
+
+            {if !$isT}
+                <li style="
+                    margin: 0;
+                    display: block;
+                    float: none;
+                    clear: both;
+                    width: 100%;
+                    height: initial;
+                    padding-top: 30px;
+                "><h3 style="
+                    margin: 0 -13px;
+                    color: #B59046;
+                    font-size: 30px;
+                    border-bottom: 1px solid #b59046;
+                    padding: 10px 13px;
+                ">{$dzData['name']}</h3></li>
+                {php $isT = true;}
+            {/if}
+
+            {loop $dzDatas $t}
+                <li>
+                    <a href="{$t['url']}">
+                        <h2>{$t[title]}</h2>
+                        <span>{$t['dizhi']}</span>
+                    </a>
+                </li>
+            {/loop}
+        {/loop}
+
+    {/loop}
+    {list catid=278 more=1 cache=36000 order=listorder_asc}
+        {if !$isSetTitle}
+            <li style="
+                margin: 0;
+                display: block;
+                float: none;
+                clear: both;
+                width: 100%;
+                height: initial;
+                padding-top: 30px;
+            "><h3 style="
+                margin: 0;
+                color: #B59046;
+                font-size: 30px;
+            ">{$dzData['name']}</h3></li>
+        {/if}
     <li>
         <a href="{$t['url']}">
             <h2>{$t[title]}</h2>

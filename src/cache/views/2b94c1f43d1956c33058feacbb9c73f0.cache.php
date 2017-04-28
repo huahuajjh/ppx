@@ -1,8 +1,8 @@
     <div class="footer">
         <div class="footer-menu">
             <ul class="footer-menu-blog">
-                <li><a href="javascript:$('#guanfangweixin').css('display', 'block');" class="wx">官方微信</a></li>
-                <li><a href="javascript:$('#guanfangweibo').css('display', 'block');" class="wb">官方微博</a></li>
+                <li><a href="javascript:;" onclick="$('#guanfangweixin').css('display', 'block');" class="wx">官方微信</a></li>
+                <li><a href="javascript:;" onclick="$('#guanfangweibo').css('display', 'block');" class="wb">官方微博</a></li>
             </ul>
             <ul class="footer-menu-contact-we">
                 <li><a href="<?php echo SITE_THEME; ?>html/fw.html">防伪查询</a></li>
@@ -35,7 +35,7 @@
     text-align: center;
     margin-bottom: 80px;
     margin-top: 8px;
-">小罐茶官方微信</span>
+">品品香官方微信</span>
         <button type="button" style="
     border: 1px solid #906E51;
     background-color: transparent;
@@ -44,7 +44,7 @@
     padding: 10px 70px;
     margin: 0 auto;
     display: block;
-    width: 176px;
+    width: 200px;
 " onclick="$('#guanfangweixin').css('display', 'none');">返回</button>
     </div>
         <div id="guanfangweibo" style="width: 1000px;position: fixed;background-color: #000000;height: 550px;border: 3px solid #C5A57C;z-index: 99999999;top: 50%;left: 50%;margin: -255px -500px;display: none;">
@@ -69,7 +69,7 @@
     text-align: center;
     margin-bottom: 80px;
     margin-top: 8px;
-">小罐茶官方微博</span>
+">品品香官方微博</span>
         <button type="button" style="
     border: 1px solid #906E51;
     background-color: transparent;
@@ -78,7 +78,7 @@
     padding: 10px 70px;
     margin: 0 auto;
     display: block;
-    width: 176px;
+    width: 200px;
 " onclick="$('#guanfangweibo').css('display', 'none');">返回</button>
     </div>
 </body>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="icon" href="<?php echo SITE_THEME; ?>image/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo SITE_THEME; ?>image/favicon.ico" type="image/x-icon">
     <title><?php echo $meta_title; ?></title>
     <meta name="keywords" content="<?php echo $meta_keywords; ?>" />
 	<meta name="description" content="<?php echo $meta_description; ?>" />
@@ -60,7 +62,7 @@
                 </div>
                 <ul class="header-menu">
                     <li <?php if ($indexc==1) { ?>class="active"<?php } ?>>
-                        <a id="zjppx-li" href="/">走进品品香</a>
+                        <a id="zjppx-li" href="/index.php?c=content&a=list&catid=3">走进品品香</a>
                     </li>
                     <li <?php if ($indexc==2) { ?>class="active"<?php } ?>>
                         <a id="ppzy-li" href="/index.php?c=content&a=list&catid=8">品牌产品</a>
@@ -88,17 +90,13 @@
                     <ul class="banner-menu-body">
                         <li>
                             <a href="/index.php?c=content&a=list&catid=3">公司简介</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=4">发展历程</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=7">荣誉</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=48">传承工艺</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=49">大师团队</a>
                         </li>
                     </ul>
@@ -115,14 +113,11 @@
                     <ul class="banner-menu-body">
                         <li>
                             <a href="/index.php?c=content&a=list&catid=34">中国白茶 • 品品香</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=19">品品香产品</a>
-                        </li>
-                        <li class="fg">
+                        </li><li class="fg">
                             <a href="/index.php?c=content&a=list&catid=8">老白茶标杆 • 晒白金</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=14">晒白金产品</a>
                         </li>
                     </ul>
@@ -139,11 +134,9 @@
                     <ul class="banner-menu-body">
                         <li>
                             <a href="/index.php?c=content&a=list&catid=29">茶园基地</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=28">白茶庄园</a>
-                        </li>
-                        <li>
+                        </li><li>
                             <a href="/index.php?c=content&a=list&catid=37">茶旅游学</a>
                         </li>
                     </ul>

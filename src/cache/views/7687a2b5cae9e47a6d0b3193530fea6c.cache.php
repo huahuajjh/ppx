@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="<?php echo SITE_THEME; ?>lib/ckplayer/ckplayer.js"></script>
+    <style type="text/css">
+        body,html {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="a1"></div>
+    <script type="text/javascript">
+        var flashvars={
+            f:'<?php echo $shipin; ?>',
+            c:0,
+            b:1,
+            i:'<?php echo $zhanshitupian; ?>'
+            };
+        var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+        CKobject.embedSWF('<?php echo SITE_THEME; ?>lib/ckplayer/ckplayer.swf','a1','ckplayer_a1','1000','600',flashvars,params);
+    </script>
+</body>
+</html>

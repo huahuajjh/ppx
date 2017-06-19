@@ -22,15 +22,21 @@ class BlockController extends Admin {
 	        }
 			$this->adminMsg($this->getCacheCode('block') . lang('success'), url('admin/block/'), 3, 1, 1);
 	    }
+		$kw = $kw ? $kw : $this->get('kw');
 	    $page     = (int)$this->get('page');
 		$page     = (!$page) ? 1 : $page;
 	    $pagelist = $this->instance('pagelist');
 		$pagelist->loadconfig();
-	    $total    = $this->block->count('block', null, 'site=' . $this->siteid);
+				$where = 'site=' . $this->siteid;
+		if ($kw) {
+		    $where.= " and name like '%" . $kw . "%'";
+		}
+	    $total    = $this->block->where($where)->count('block', null, 'site=' . $this->siteid);
 	    $pagesize = isset($this->site['SITE_ADMIN_PAGESIZE']) && $this->site['SITE_ADMIN_PAGESIZE'] ? $this->site['SITE_ADMIN_PAGESIZE'] : 8;
-	    $data     = $this->block->where('site=' . $this->siteid)->page_limit($page, $pagesize)->order(array('id DESC'))->select();
-	    $pagelist = $pagelist->total($total)->url(url('admin/block/index', array('page'=>'{page}')))->num($pagesize)->page($page)->output();
+	    $data     = $this->block->where($where)->page_limit($page, $pagesize)->order(array('id DESC'))->select();
+	    $pagelist = $pagelist->total($total)->url(url('admin/block/index', array('page'=>'{page}', "kw" => $kw)))->num($pagesize)->page($page)->output();
 	    $this->view->assign(array(
+			'kw' => $kw,
 	        'list'     => $data,
 	        'pagelist' => $pagelist,
 	    ));
@@ -62,7 +68,8 @@ class BlockController extends Admin {
             if (empty($data['name']) || empty($data['content'])) $this->adminMsg(lang('a-blo-4'));
 			$data['site'] = $this->siteid;
             $this->block->update($data, 'id=' . $id);
-            $this->adminMsg($this->getCacheCode('block') . lang('success'), url('admin/block'), 3, 1, 1);
+			$kw = $kw ? $kw : $this->get('kw');
+            $this->adminMsg($this->getCacheCode('block') . lang('success'), url('admin/block', array("kw" => $kw)), 3, 1, 1);
         }
         $this->view->assign('data', $data);
         $this->view->display('admin/block_add');

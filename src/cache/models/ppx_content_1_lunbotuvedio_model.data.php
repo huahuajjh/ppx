@@ -8,6 +8,7 @@ return array (
     'content' => 'mediumtext',
     'zhanshitupian' => 'varchar',
     'shipin' => 'varchar',
+    'shoujitupian' => 'varchar',
   ),
   'fields' => 
   array (
@@ -16,6 +17,7 @@ return array (
     2 => 'content',
     3 => 'zhanshitupian',
     4 => 'shipin',
+    5 => 'shoujitupian',
   ),
   'primary_key' => 'id',
 );

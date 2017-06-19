@@ -24,7 +24,6 @@ return array(
 	'SITE_COMMENT'            => true,  //
 	'SYS_MODE'                => '0',  //版本模式
 	'SITE_ADMINLOG'           => true,  //后台操作日志开关
-	'SITE_BDPING'             => false,  //百度Ping推送
 	'SYS_ILLEGAL_CHAR'        => false,  //禁止非法字符提交
 	'SYS_MEMBER'              => false,  //禁止使用会员功能
 	'SYS_ATTACK_LOG'          => true,  //系统攻击日志开关
@@ -45,12 +44,12 @@ return array(
 	'SITE_MAP_TIME'           => '10',  //天之内
 	'SITE_MAP_NUM'            => '30',  //条数据
 	'SITE_MAP_AUTO'           => false,  //自动生成开关，开启之后系统更新内容时XML会自动更新
-	'SITE_SEARCH_PAGE'        => '2',  //搜索列表页显示数量
+	'SITE_SEARCH_PAGE'        => '10',  //搜索列表页显示数量
 	'SITE_SEARCH_DATA_CACHE'  => '',  //搜索结果缓存时间，单位秒
 	'SITE_SEARCH_URLRULE'     => '',  //内容搜索URL规则
 	'SITE_SEARCH_TYPE'        => '1',  //搜索类型，1：普通搜索，2：Sphinx
 	'SITE_SEARCH_INDEX_CACHE' => '',  //搜索索引缓存时间，单位小时
-	'SITE_SEARCH_KW_FIELDS'   => 'title,keywords,description',  //参数kw匹配字段，如title,keywords
+	'SITE_SEARCH_KW_FIELDS'   => 'title',  //参数kw匹配字段，如title,keywords
 	'SITE_SEARCH_KW_OR'       => true,  //针对多个字段匹配，默认AND条件筛选
 	'SITE_SEARCH_SPHINX_HOST' => '',  //Sphinx服务器地址
 	'SITE_SEARCH_SPHINX_PORT' => '',  //Sphinx服务器端口号

@@ -21,6 +21,17 @@
 		<?php if (admin_auth($userinfo['roleid'], 'block-add')) { ?><a href="<?php echo url('admin/block/add'); ?>"><em><?php echo lang('a-add'); ?></em></a><span>|</span><?php }  if (admin_auth($userinfo['roleid'], 'block-cache')) { ?><a href="<?php echo url('admin/block/cache'); ?>"><em><?php echo lang('a-cache'); ?></em></a><?php } ?>
 	</div>
 	<div class="bk10"></div>
+	<div class="explain-col">
+		<form action="/index.php?s=admin&c=block" method="get">
+			<input type="hidden" name="s" value="admin">
+			<input type="hidden" name="c" value="block">
+			<label>搜索标题： </label>
+			<label>
+				<input type="text" class="form-control" size="25" name="kw" /></label>
+			<label>
+			<input type="submit" class="btn btn-success" value="<?php echo lang('a-search'); ?>" /></label>
+		</form>
+	</div>
 	<div class="table-responsive mytable">
 	<form action="" method="post" name="myform">
 	<table class="table table-striped" width="100%">
@@ -42,7 +53,7 @@
 		<?php $del = url('admin/block/del/',array('id'=>$t['id']));?>
 		<a href="javascript:;" onClick="getViewData('<?php echo $t['id']; ?>');"><?php echo lang('a-blo-6'); ?></a> | 
 		<a href="javascript:;" onClick="getViewName('<?php echo $t['id']; ?>');"><?php echo lang('a-blo-7'); ?></a> |
-		<?php if (admin_auth($userinfo['roleid'], 'block-edit')) { ?><a href="<?php echo url('admin/block/edit',array('id'=>$t['id'])); ?>"><?php echo lang('a-edit'); ?></a> | <?php }  if (admin_auth($userinfo['roleid'], 'block-del')) { ?><a href="javascript:;" onClick="if(confirm('<?php echo lang('a-confirm'); ?>')){ window.location.href='<?php echo $del; ?>'; }"><?php echo lang('a-del'); ?></a><?php } ?>
+		<?php if (admin_auth($userinfo['roleid'], 'block-edit')) { ?><a href="<?php echo url('admin/block/edit',array('id'=>$t['id'], 'kw'=> $kw)); ?>"><?php echo lang('a-edit'); ?></a> | <?php }  if (admin_auth($userinfo['roleid'], 'block-del')) { ?><a href="javascript:;" onClick="if(confirm('<?php echo lang('a-confirm'); ?>')){ window.location.href='<?php echo $del; ?>'; }"><?php echo lang('a-del'); ?></a><?php } ?>
 		</td>
 	</tr>
 	<?php } } ?>

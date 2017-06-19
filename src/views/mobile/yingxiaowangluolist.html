@@ -1,0 +1,110 @@
+{template header}
+<style>
+    .ls-area {
+        background: #fff;
+        padding-bottom: 8px;
+    }
+    .ls-area h1{
+        padding-top: 28px;
+        font-size: 16px;
+        margin: 0;
+        color: #a2824F;
+        text-align: center;
+    }
+
+    .ls-area > ul {
+        margin: 0;
+        padding: 20px;
+        border-bottom: 1px solid #a2824F;
+        list-style: none;
+    }
+    .ls-area > ul > li > a{
+        border-bottom: 1px solid #a2824F;
+        font-size: 14px;
+        color: #a2824F;
+        padding: 10px 0;
+        text-decoration: none;
+        display: block;
+    }
+    .ls-area > ul > li > a:before{
+        content: "+";
+        float: right;
+        padding-right: 5px;
+        line-height: 2;
+    }
+    .ls-area > ul > li > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+    }
+    .ls-area > ul > li > ul.show {
+        display: block;
+    }
+    .ls-area > ul > li > ul a {
+        display: block;
+        color: #a2824F;
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+    .m-5 {
+        margin: 8px 0;
+    }
+    .m-t-5 {
+        margin-top: 8px;
+    }
+</style>
+<img src="{$cats[27][image]}" alt="" class="img-block">
+<div class="ls-area">
+    <h1>
+        <完整连锁店列表>
+    </h1>
+    {php $links = linkagelist(2);}
+    <ul>
+        {loop $links $l}
+            {php $linkIds = $l['arrchilds'];}
+            {if !$linkIds}
+                {php $linkIds = array($l['id']);}
+            {/if}
+
+        <li>
+            {php $isT = false;}
+            {php $dzDatas=array();}
+            {loop $linkIds $dataId}
+                {php $dzData=linkagedata(2, $dataId);}
+                {list catid=27 and suozaidiqu=$dataId more=1 cache=36000 order=listorder_asc}
+                    {php array_push($dzDatas, $t);}
+                {/list}
+                {if !$isT}
+                    <a>{$dzData['name']}</a>
+                    {php $isT = true;}
+                {/if}
+            {/loop}
+            <ul>
+            {loop $dzDatas $t}
+                <li>
+                    <a href="{$t['url']}">
+                        {$t[title]}
+                    </a>
+                </li>
+            {/loop}
+            </ul>
+        </li>
+        {/loop}
+    </ul>
+    <img class="img-block m-5" src="{block(119)}" alt="">
+    <img class="img-block m-5" src="{block(120)}" alt="">
+    <img class="img-block m-t-5" src="{block(121)}" alt="">
+</div>
+<script>
+    $(".ls-area > ul > li > a").on("click", function() {
+         var ul = $(this).closest("li").find("> ul");
+         $(".ls-area > ul > li > ul").not(ul).css("display", "none");
+            if(!ul.is(":visible"))
+                ul.css("display", "block");
+            else
+                ul.css("display", "none");
+    });
+</script>
+{php $mbx = array('营销网络', '完整连锁店');}
+{template footer}

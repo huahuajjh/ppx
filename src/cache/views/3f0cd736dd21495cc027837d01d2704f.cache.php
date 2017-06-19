@@ -28,23 +28,14 @@
     <img src="<?php echo $cats[25][image]; ?>" alt="">
     <h2>品品香全国连锁店</h2>
     <div class="yxwl-down-list">
-        <p>选择省份或地区</p>
+        <p>查找门店</p>
         <span></span>
         <ul>
-            <?php $data=linkagelist(2);  if (is_array($data)) { $count=count($data);foreach ($data as $t) { ?>
+            <?php $menDianList = array();  $return = $this->_listdata("catid=27 more=1 cache=36000 order=listorder_asc"); extract($return); $count=count($result); if (is_array($result)) { foreach ($result as $key=>$t) {  $data=linkagedata(2, $t['suozaidiqu']);  $dizhiName = $data['name'];  $parentid = $t['suozaidiqu'];  if ($data['parentid'] != 0) {  $parentid = $parentid.$data['parentid'];  $data=linkagedata(2, $data['parentid']);  $dizhiName = $data['name'].'，'.$dizhiName;  }  if ($data['parentid'] != 0) {  $parentid = $parentid.$data['parentid'];  $data=linkagedata(2, $data['parentid']);  $dizhiName = $data['name'].'，'.$dizhiName;  }  if (!$menDianList[$parentid]) {  $menDianList[$parentid] = array();  }  array_push($menDianList[$parentid], array('url' => $t['url'], 'dizhiName' => $dizhiName));  } }  ksort($menDianList);  if (is_array($menDianList)) { $count=count($menDianList);foreach ($menDianList as $kA=>$vA) {  if (is_array($vA)) { $count=count($vA);foreach ($vA as $k=>$v) { ?>
                 <li>
-                    <a href="/index.php?c=content&a=list&catid=27&dq=<?php echo $t['id']; ?>"><?php echo $t['name']; ?></a>
+                    <a href="<?php echo $v['url']; ?>"><?php echo $v['dizhiName']; ?></a>
                 </li>
-                <?php if ($t['arrchilds'] != null) {  $data1=linkagelist(2, $t['id']);  if (is_array($data1)) { $count=count($data1);foreach ($data1 as $t2) { ?>
-                        <li>
-                            <a href="/index.php?c=content&a=list&catid=27&dq=<?php echo $t2['id']; ?>">&nbsp;&nbsp;&nbsp;&nbsp;|---<?php echo $t2['name']; ?></a>
-                        </li>
-                        <?php if ($t2['arrchilds'] != null) {  $data2=linkagelist(2, $t2['id']);  if (is_array($data2)) { $count=count($data2);foreach ($data2 as $t3) { ?>
-                                
-                                <li>
-                                    <a href="/index.php?c=content&a=list&catid=27&dq=<?php echo $t3['id']; ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---<?php echo $t3['name']; ?></a>
-                                </li>
-                            <?php } }  }  } }  }  } } ?>
+                <?php } }  } } ?>
         </ul>
     </div>
     <a href="/index.php?c=content&a=list&catid=27" class="yxwl-all-dian">完整连锁店列表</a>

@@ -25,9 +25,9 @@ return array(
 	'SITE_THUMB_WIDTH'        => '',  //内容缩略图默认宽度
 	'SITE_THUMB_HEIGHT'       => '',  //内容缩略图默认高度
 	'SITE_TIME_FORMAT'        => 'Y-m-d',  //网站时间显示格式，参数与PHP的date函数一致，默认Y-m-d H:i:s
-	'SITE_MOBILE'             => '',  //移动设备访问网站开关，打开之后需要设计移动端模板（默认mobile或者mobile_站点id）
+	'SITE_MOBILE'             => 'true',  //移动设备访问网站开关，打开之后需要设计移动端模板（默认mobile或者mobile_站点id）
 	'SITE_MURL'               => '',  //域名格式为：m.finecms.net，不要加http://
 	'SITE_ICP'                => 'ICP备案序号',  //ICP备案序号
-	'SITE_JS'                 => 'a:1:{s:5:"value";s:123:"a:1:{s:5:"value";s:97:"a:1:{s:5:"value";s:71:"a:1:{s:5:"value";s:45:"a:1:{s:5:&quot;value&quot;;s:0:&quot;&quot;;}";}";}";}";}',  //第三方统计代码
+	'SITE_JS'                 => 'a:1:{s:5:"value";s:183:"a:1:{s:5:&quot;value&quot;;s:97:&quot;a:1:{s:5:&quot;value&quot;;s:71:&quot;a:1:{s:5:&quot;value&quot;;s:45:&quot;a:1:{s:5:&quot;value&quot;;s:0:&quot;&quot;;}&quot;;}&quot;;}&quot;;}";}',  //第三方统计代码
 
 );

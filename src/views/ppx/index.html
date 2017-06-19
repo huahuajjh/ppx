@@ -9,7 +9,7 @@
             <div class="swiper-wrapper">
                 {list catid=52 more=1 cache=36000 order=listorder_asc}
                 <div class="swiper-slide">
-                    <img src="{$t['zhanshitupian']}" onclick="showVedioModal('{$t.url}');">
+                    <img src="{$t['zhanshitupian']}" onclick="showVedioModal('{$t.url}', '{$t.shipin}');">
                 </div>
                 {/list}
             </div>
@@ -139,7 +139,8 @@
     });
 </script>
 <script>
-    function showVedioModal(url) {
+    function showVedioModal(url, shipinUrl) {
+        if(!shipinUrl) return;
         $(".sp-modal iframe")[0].src = url;
         $(".sp-modal").fadeIn();
     }

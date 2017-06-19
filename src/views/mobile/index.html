@@ -1,37 +1,66 @@
 {template header}
-<body id="index">
-<script type="text/javascript">
-$(document).ready(function(){
-	$("#banner_close").click(function(){
-		$("#common-banner").hide();
-	});
-	$("#nav-more").click(function(){
-		var id = $("#list_id").val();
-		$("#nav-more").html('<span class="nav-button">加载中...</span>');
-		$.post("{url('api/mobiledata')}&rand="+Math.random(), { tpl: "data_index", page:id }, function(data){ 
-			$("#deals").append(data);
-			$("#list_id").val(Number(id) + 1);
-			$("#nav-more").html('<span class="nav-button">查看更多</span>');
-		});
-	});
-});
-</script>
-<header class="index">
-    <h1 id="logo"><a href="{SITE_PATH}">{$SITE_NAME}</a></h1>
-    <div id="nav">
-        <a class="account" href="{url('member')}">会员中心</a>
-        <a class="category" href="{url('api/category')}">栏目</a>
-        <a class="search" href="{url('content/search')}">搜索</a>
+<style>
+	.swiper-container img {
+		width: 100%;
+	}
+	.vedio-modal {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .6);
+		z-index: 99;
+		display: none;
+	}
+	.vedio-modal video{
+		width: 90%;
+		height: 300px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 40px;
+		background: #000;
+	}
+</style>
+<link rel="stylesheet" href="{SITE_THEME}css/swiper-3.4.2.min.css">
+<script src="{SITE_THEME}js/swiper-3.4.2.min.js"></script>
+<div class="index-context">
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+			{list catid=52 more=1 cache=36000 order=listorder_asc}
+                <div class="swiper-slide">
+					<img src="{$t['shoujitupian']}" alt="" onclick="showVedioModal('{$t.url}', '{$t.shipin}');">
+				</div>
+			{/list}
+        </div>
     </div>
-</header>
-{template banner}
-<div class="current-category">您当前的位置：首页</div>
-<div id="deals">
-    <input name="list_id" id="list_id" type="hidden" value="1">
-    {template data_index}
+	<a href="/index.php?c=content&a=list&catid=19" class="block">
+		<img class="img-block" src="{block(76)}" alt="">
+	</a>
+	<a href="/index.php?c=content&a=list&catid=14" class="block">
+		<img class="img-block" src="{block(77)}" alt="">
+	</a>
 </div>
-<div id="deals-page" class="">
-    <div id="nav-more"><span class="nav-button">查看更多</span></div>
-    <div id="nav-top"><span class="nav-button"><label onClick="javascript:scroll(0,0)">回到顶部</label></span></div>
+<div class="vedio-modal">
+	<video id="vdo" controls="controls"></video>
 </div>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		autoplay: 3000,//可选选项，自动滑动
+		loop : true,
+		autoplayDisableOnInteraction: false
+	})
+	function showVedioModal(url, vedioUrl) {
+		if(!vedioUrl) return;
+		$(".vedio-modal").css("display", "block");
+		$("#vdo")[0].src = vedioUrl;
+	}
+	$(".vedio-modal").on("click", function(e) {
+		if(e.target == this) {
+			$("#vdo")[0].src = '';
+			$(".vedio-modal").css("display", "none");
+		}
+	});
+</script>
+{php $mbx = array('首页');}
 {template footer}

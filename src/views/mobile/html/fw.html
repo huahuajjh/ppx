@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<style>
+*{margin:0;padding:0;font-size:14px;font-faimly:"微软雅黑";color:#333;}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0;}
+ul{list-style:none;}
+*{background-image:url(about:blank);background-attachment:fixed;}
+body{background-image:url(about:blank);background-attachment:fixed;}
+.main{border:1px solid #ccc;border-radius:5px;padding:20px;}
+.item{margin-bottom:15px}
+.item:after{clear:both;content:"/";height:0;display:block;visibility:hidden}
+.item-left{float:left;line-height:30px;text-align:right}
+.item-right{float:left;width:100%;}
+.item-right:after{clear:both;content:"/";height:0;display:block;visibility:hidden}
+.item-text{display:block;width:200px;height:22px;border:1px solid #ccc;border-radius:3px;padding:4px 10px}
+.item-right input[type=button]{display:block;float:left;line-height:30px;width:100px;height:30px;border:1px solid #ccc;border-radius:2px}
+.item-right a{line-height:30px;color:#1e90ff;font-size:12px}
+.item-right img{display:block;float:left;height:30px;margin:0 10px;}
+</style>
+<style type="text/css">
+        .code
+        {
+            background-image: url(code.jpg);
+            font-family: Arial;
+            font-style: italic;
+            color: Red;
+            border: 0;
+            padding: 2px 3px;
+            letter-spacing: 3px;
+            font-weight: bolder;
+            margin: 3px 2px 0px 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+	<div class="item">
+    	<div class="item-left">
+        	防伪码：
+        </div>
+        <div class="item-right">
+        	<input type="text" class="item-text" maxlength="22" id="edtQP" />
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <!--end item-->
+	<div class="item">
+    	<div class="item-left">
+        	验证码：
+        </div>
+        <div class="item-right">
+            <input type="text" class="item-text sty" maxlength="4" id="edtYZM"/>
+            <input type="text" id="checkCode" readonly="readonly" class="code" style="width: 55px; height: 22px;background-color: #f5f5f5;" onfocus="this.blur();"/>
+            <a href="#" onclick="createCode()" style="font-size:12px;color:#1e90ff;">看不清楚</a>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <!--end item-->
+    <div class="item">
+    	<div class="item-left">
+        	&nbsp;
+        </div>
+        <div class="item-right">
+        	<input type="button" value="查询" onclick="validate()" />
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <!--end item-->
+</div>
+<!--end main-->
+<script type="text/javascript">
+    var code;
+    function createCode() {
+        code = "";
+        var codeLength = 4;
+        var checkCode = document.getElementById("checkCode");
+        checkCode.value = "";
+        var selectChar = new Array(2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+        for (var i = 0; i < codeLength; i++) {
+            var charIndex = Math.floor(Math.random() * 32); code += selectChar[charIndex];
+        }
+        if (code.length != codeLength) {
+            createCode();
+        }
+        checkCode.value = code;
+        document.getElementById("edtYZM").value="";
+    }
+    document.body.onload = createCode;
+    function validate() {
+        var fwCode = document.getElementById("edtQP").value;
+        var txtYzm = document.getElementById("edtYZM").value.toUpperCase();
+        if (fwCode == "") {
+            alert("请输入防伪码!");
+            return false;
+        }
+        var antiFakeCodeReg = /^\d{20}$|^\d{21}$|^\d{22}$/; //防伪码正则表达式
+        if (!antiFakeCodeReg.test(fwCode)) {
+            alert("请输入正确的防伪码！");
+            return false;
+        }
+        if (txtYzm.length <= 0) {
+            alert("请输入验证码！");
+            return false;
+        }
+        else if (txtYzm != code) {
+            alert("验证码输入错误！");
+            createCode();
+            return false;
+        }
+        else {
+
+            if (fwCode.length == 22) {
+                var par = "http://qry.gov315.com/QueryRet.aspx?fwcode=" + fwCode + "&fwyzm=" + txtYzm;
+                window.open(par, "", "toolbar=no,status=yes,resizable=yes,width=1124px,height=800px");
+                createCode();
+                return true;
+            }
+            else {
+                var par = "http://www.app315.net/AntiFakeQueryResult.aspx?Code=" + fwCode;
+                window.open(par, "", "toolbar=no,status=yes,resizable=yes,width=1124px,height=800px");
+                createCode();
+                return true;
+            }
+        }
+    }
+</script>
+</body>
+</html>

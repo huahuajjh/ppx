@@ -1,31 +1,104 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"  />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<meta name="format-detection" content="telephone=no" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="apple-touch-startup-image" href="{SITE_THEME}images/startup.png" />
-<link rel="apple-touch-icon-precomposed" sizes="57x57"   href="{SITE_THEME}images/apple-touch-icon-57x57-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="{SITE_THEME}images/apple-touch-icon-72x72-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{SITE_THEME}images/apple-touch-icon-114x114-precomposed.png" />
-<title>{$meta_title}</title>
-<link rel="stylesheet" href="{SITE_THEME}images/style.css" />
-<script type="text/javascript" src="{ADMIN_THEME}js/jquery.min.js"></script>
-<!--<script type="text/javascript">
-$(document).ready(function(){
-	$("#fc_load").hide();
-	$("a").click(function(){
-		var sh = $(window).scrollTop();
-		var wh = $(window).height();
-		var ww = $(window).width();
-		$("#fc_load").css("top", Number(sh)+(Number(wh)-110));
-		$("#fc_load").css("left", Number(ww)/2);
-		$("#fc_load").show();
-	});
-});
-</script>-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=360, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{$meta_title}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="{SITE_THEME}css/base.css">
+	<script src="{SITE_THEME}js/jquery.min.js"></script>
+	<style>
+		.not-push:before {
+			content: "";
+			display: none;
+		}
+	</style>
 </head>
+<body>
+	<header>
+		<a href="/"><img class="logo" src="{SITE_THEME}images/logo.png" alt=""></a>
+		<div class="top-menu-btns">
+			<a id="searchBtn">
+				<img src="{SITE_THEME}images/s.png" alt="">
+			</a>
+			<a id="menuBtn">
+				<img src="{SITE_THEME}images/menu.png" alt="">
+			</a>
+		</div>
+		<div class="search-modal">
+			<div class="modal-header">
+				<img class="logo" src="{SITE_THEME}images/logo.png" alt="">
+				<button id="closeSearch">×</button>
+			</div>
+			<div class="modal-context">
+				<form class="search-from" action="{url('content/search')}" method="get">
+					<input name="c" type="hidden" value="content">
+    				<input name="a" type="hidden" value="search">
+					<input type="search" name="kw" value="" x-webkit-speech placeholder="请输入搜索关键词">
+				</form>
+				<ul class="search-tj">
+					<li>快速连接</li>
+					<li>
+						<a href="/index.php?c=content&a=list&catid=25">营销网络</a>
+					</li>
+					<li>
+						<a href="/index.php?c=content&a=list&catid=12">白茶资讯</a>
+					</li>
+					<li>
+						<a href="/index.php?c=content&a=list&catid=19">品品香产品</a>
+					</li>
+					<li>
+						<a href="/index.php?c=content&a=list&catid=14">晒白金产品</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="menu-modal">
+			<div class="modal-header">
+				<img class="logo" src="{SITE_THEME}images/logo.png" alt="">
+				<button id="closeMenu">×</button>
+			</div>
+			<div class="modal-context" style="padding: 0 20px;">
+				<ul class="footer-menu">
+					<li>
+						<a>中国白茶 • 品品香</a>
+						<ul>
+							<li>
+								<a href="/index.php?c=content&a=list&catid=34">品牌溯源</a>
+							</li>
+							<li>
+								<a href="/index.php?c=content&a=list&catid=35">品牌释义</a>
+							</li>
+							<li>
+								<a href="/index.php?c=content&a=list&catid=36">品牌定位</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="not-push" href="/index.php?c=content&a=list&catid=19">品品香产品</a>
+					</li>
+					<li>
+						<a href="">老白茶标杆 • 晒白金</a>
+						<ul>
+							<li>
+								<a href="/index.php?c=content&a=list&catid=8">品牌释义</a>
+							</li>
+							<li>
+								<a href="/index.php?c=content&a=list&catid=9">三大标准</a>
+							</li>
+							<li>
+								<a href="/index.php?c=content&a=list&catid=10">三重体验</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="not-push" href="/index.php?c=content&a=list&catid=14">晒白金产品</a>
+					</li>
+					<li>
+						<a class="not-push" href="{SITE_THEME}html/fw.html">防伪查询</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>

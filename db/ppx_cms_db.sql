@@ -2,7 +2,8 @@
 SQLyog Professional v12.08 (64 bit)
 MySQL - 5.7.14 : Database - ppx_cms_db
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -12,6 +13,12 @@ MySQL - 5.7.14 : Database - ppx_cms_db
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 /*Table structure for table `ppx_block` */
+
+DROP DATABASE ppx_cms_db;
+
+CREATE DATABASE ppx_cms_db;
+USE ppx_cms_db;
+
 
 CREATE TABLE `ppx_block` (
   `id` smallint(5) NOT NULL AUTO_INCREMENT,

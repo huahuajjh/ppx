@@ -9,6 +9,7 @@ return array (
     'zhanshitupian' => 'varchar',
     'shipin' => 'varchar',
     'shoujitupian' => 'varchar',
+    'src' => 'varchar',
   ),
   'fields' => 
   array (
@@ -18,6 +19,7 @@ return array (
     3 => 'zhanshitupian',
     4 => 'shipin',
     5 => 'shoujitupian',
+    6 => 'src',
   ),
   'primary_key' => 'id',
 );

@@ -8,7 +8,7 @@ return array(
 
 	'host'     => 'localhost', 
 	'username' => 'root', 
-	'password' => '123456', 
+	'password' => 'huahuajjh3', 
 	'dbname'   => 'ppx_cms_db', 
 	'prefix'   => 'ppx_', 
 	'charset'  => 'utf8', 

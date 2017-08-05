@@ -8,7 +8,7 @@
             <div class="swiper-wrapper">
                 <?php $return = $this->_listdata("catid=52 more=1 cache=36000 order=listorder_asc"); extract($return); $count=count($result); if (is_array($result)) { foreach ($result as $key=>$t) { ?>
                 <div class="swiper-slide">
-                    <img src="<?php echo $t['zhanshitupian']; ?>" onclick="showVedioModal('<?php echo $t['url']; ?>', '<?php echo $t['shipin']; ?>');">
+                    <img src="<?php echo $t['zhanshitupian']; ?>" onclick="showVedioModal('<?php echo $t['url']; ?>', '<?php echo $t['shipin']; ?>','<?php echo $t['src']; ?>');">
                 </div>
                 <?php } } ?>
             </div>
@@ -138,9 +138,13 @@
     });
 </script>
 <script>
-    function showVedioModal(url, shipinUrl) {
+    function showVedioModal(url, shipinUrl,src) {
         if(!shipinUrl) return;
-        $(".sp-modal iframe")[0].src = url;
+        if(src){
+            $(".sp-modal iframe")[0].src = src;
+        }else{
+            $(".sp-modal iframe")[0].src = url;
+        }
         $(".sp-modal").fadeIn();
     }
     function closeVedioModal() {
